@@ -1,5 +1,46 @@
 $(document).ready(function(){
 
+    // open/close more contacts on header
+    $(function() {
     
+        var moreContactToogle = $('.contacts__more'),
+            fullContactsContainer = $('.full-contacts'),
+            fullContacts = fullContactsContainer.find('.full-contacts__inner'),
+            closeContacts = $('.full-contacts__close')
+        
+        moreContactToogle.on('click', function(e) {
+            e.preventDefault();
+            
+            fullContactsContainer.fadeIn(100)
+                .animate({
+                    opacity: 1,
+                    width: 620
+                }, 200)
+                .delay(100)
+                .animate({
+                    height: 135
+                }, 500, function() {
+                    fullContacts.delay(200).fadeIn(300);
+                });
+        });
+        
+        closeContacts.on('click', function(e) {
+            e.preventDefault();
+            
+            fullContacts.fadeOut(300);
+            fullContactsContainer.delay(500)
+                .animate({
+                    height: 0
+                }, 500)
+                .delay(100)
+                .animate({
+                    width: 0
+                }, 200, function() {
+                    $(this).css('display', 'none');
+                });
+            
+        });
+    
+    });
 
 });
