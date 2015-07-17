@@ -1,0 +1,459 @@
+@font-face {
+	font-family: 'Arian-Regular';
+	src:url('../fonts/Arian/ArianAMURegular/ArianAMURegular.eot?') format('eot'),
+        url('../fonts/Arian/ArianAMURegular/ArianAMURegular.woff') format('woff'),
+        url('../fonts/Arian/ArianAMURegular/ArianAMURegular.ttf')  format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family: 'Arian-Bold';
+	src:url('../fonts/Arian/ArianAMURegular/ArianAMUBold.eot?') format('eot'),
+        url('../fonts/Arian/ArianAMURegular/ArianAMUBold.woff') format('woff'),
+        url('../fonts/Arian/ArianAMURegular/ArianAMUBold.ttf')  format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Comfortaa-Light';
+	src:url('../fonts/Comfortaa/Comfortaa-Light.ttf')  format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family: 'Comfortaa-Regular';
+	src:url('../fonts/Comfortaa/Comfortaa-Regular.ttf')  format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family: 'Comfortaa-Bold';
+	src:url('../fonts/Comfortaa/Comfortaa-Bold.ttf')  format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+/*---------------------------------
+Table of content
+1 - CSS Reset
+2 - Global Styles
+3 -
+
+
+
+
+/********************************************************
+
+    1 - CSS RESET (Eric Meyer's)
+
+**********************************************************/
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+
+ol, ul{
+	list-style: none;
+}
+
+blockquote, q{
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after{
+	content: '';
+	content: none;
+}
+
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+/*********************************************************\
+
+    2 - GLOBAL STYLES
+
+\*********************************************************/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.clearfix:after,
+.row:after {
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+
+.image-cover {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+html{
+	height: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{
+	display: block;
+}
+
+html,
+body{
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    font-family: 'Arian-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #3a3a3a;
+    background: #fff;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    outline: none;
+}
+
+a, img, input, textarea, select, button {
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+::-webkit-input-placeholder {font-family: inherit; color: inherit; text-overflow: ellipsis; opacity: 1; transition: 0.2s ease;}
+::-moz-placeholder          {font-family: inherit; color: inherit; text-overflow: ellipsis; opacity: 1; transition: 0.2s ease;}/* Firefox 19+ */
+:-moz-placeholder           {font-family: inherit; color: inherit; text-overflow: ellipsis; opacity: 1; transition: 0.2s ease;}/* Firefox 18- */
+:-ms-input-placeholder      {font-family: inherit; color: inherit; text-overflow: ellipsis; opacity: 1; transition: 0.2s ease;}
+
+:focus::-webkit-input-placeholder {opacity: 0; color: transparent}
+:focus::-moz-placeholder          {opacity: 0; color: transparent}
+:focus:-moz-placeholder           {opacity: 0; color: transparent}
+:focus:-ms-input-placeholder      {opacity: 0; color: transparent}
+
+
+.va-container {
+    display: table;
+    position: relative;
+}
+.va-top,
+.va-middle,
+.va-bottom {
+    display: table-cell;
+}
+.va-top {
+    vertical-align: top;
+}
+.va-middle {
+    vertical-align: middle;
+}
+.va-bottom {
+    vertical-align: bottom;
+}
+
+
+
+.wrapper {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    
+    min-width: 1280px;
+}
+
+.center-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.content-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+/*********************************************************\
+
+    3 - Header Styles
+
+\*********************************************************/
+.wrapper {
+    background: #fff;
+    background-image: url(../images/bg-main.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto;
+    min-height: 100vh; /* 100% viewport height */
+}
+
+.main-header {
+    
+}
+
+.top-panel {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.second-nav {
+    float: left;
+    padding-top: 5px;
+    line-height: 1em;
+}
+.second-nav ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    font-size: 14px;
+}
+.second-nav a {
+    display: block;
+}
+.second-nav li:hover a {
+    border-bottom: 1px solid #333;
+}
+
+.views-param {
+    float: right;
+}
+.views-param__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.views-param__item select {
+    height: 20px;
+    padding-left: 3px;
+    font-size: 11px;
+    color: #c2c2c2;
+    border: 1px solid #c2c2c2;
+    outline: none;
+}
+
+.header-content {
+    padding: 20px 0;
+    padding-right: 15px;
+}
+
+.logo-and-location {
+    float: left;
+    margin-right: 20px;
+}
+
+.logo {
+    display: block;
+    width: 316px;
+    margin-bottom: 15px;
+}
+.logo a {
+    display: block;
+}
+.logo img {
+    display: block;
+    width: 100%;
+}
+
+.location {
+    text-align: center;
+}
+.location__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 24px;
+    margin-right: 7px;
+    background-image: url(../images/icon-location.png);
+}
+.location__choice {
+    display: inline-block;
+    vertical-align: middle;
+    height: 24px;
+    font-size: 14px;
+    border-bottom: 1px solid #e0e0e0;
+    outline: none;
+}
+
+.contacts-and-search {
+    float: left;
+    padding-top: 15px;
+}
+.contacts {
+    margin-bottom: 15px;
+}
+.contacts__phone-inline {
+    font-size: 30px;
+    font-family: 'Comfortaa-Bold';
+    color: #309080;
+}
+.contacts__phone-inline span {
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: -1.9px
+}
+
+.contacts__more {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-family: 'Arian-Regular';
+    font-size: 24px;
+    padding: 8px 10px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+}
+.contacts__more .fa {
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: 28px;
+}
+
+.search {
+    
+}
+.search__form {
+    position: relative;
+    width: 100%;
+}
+.search__input {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #c2c2c2;
+}
+.search__submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    border-radius: 4px;
+    background: #309080;
+    background-image: url(../images/icon-search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: none;
+}
+
+
+
+
+.basket-and-auth {
+    float: right;
+    min-width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
