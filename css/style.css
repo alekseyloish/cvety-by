@@ -940,8 +940,133 @@ p {
 }
 
 .our-advantages__list {
-    
+   width: 100%; 
 }
+.our-advantages__item {
+    float: left;
+    width: 25%;
+    min-height: 250px;
+    padding: 0 10px;
+    text-align: center;
+}
+.our-advantages__image-placeholder {
+    display: block;
+    margin-bottom: 10px;
+    min-height: 130px;
+}
+.our-advantages__title {
+    display: block;
+    font-family: 'Comfortaa-Bold';
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #309080;
+    margin-bottom: 10px;
+}
+.our-advantages__text {
+    font-size: 14px;
+    font-family: 'PTSerif-Italic';
+    margin: 0;
+}
+.our-advantages__button {
+    display: inline-block;
+    background: #fe4580;
+    font-size: 16px;
+    color: #fff;
+    width: 235px;
+    height: 40px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    
+    
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.our-advantages__button:hover {
+    border-color: #fe4580;
+    background: #fff;
+    color: #fe4580;
+}
+
+
+
+
+
+/*********************************************************\
+
+    8 - Main footer Styles
+
+\*********************************************************/
+.main-footer {
+    width: 100%;
+    background: #f4f4f4;
+    padding: 25px 0 20px;
+}
+
+.footer-links {
+    float: left;
+    width: 25%;
+    padding-left: 15px;
+}
+
+.footer-links__title {
+    font-family: 'Comfortaa-Regular';
+    font-size: 14px;
+    color: #309080;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footer-links__list {
+}
+.footer-links__list li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+.footer-links__list a {
+    border-bottom: 1px solid transparent;
+}
+.footer-links__list a:hover {
+    border-color: #3a3a3a;
+}
+
+.social-links {}
+.social-links__item {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #309080;
+    text-align: center;
+    color: #309080;
+    
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.social-links__item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.social-links__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-links__item:hover {
+    background: #309080;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
 
 
 
