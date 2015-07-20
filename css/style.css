@@ -298,7 +298,7 @@ p {
 .main-content {
     position: relative;
     min-height: 450px;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 
@@ -682,6 +682,8 @@ p {
 \*********************************************************/
 
 .section-offers {
+    position: relative;
+    margin-top: 15px;
     padding-bottom: 20px;
     border-bottom: 1px solid #309080;
 }
@@ -1130,7 +1132,7 @@ p {
 }
 
 .breadcrumbs {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .breadcrumbs ul {
     padding-left: 15px;
@@ -1149,6 +1151,10 @@ p {
     content: '>';
     position: relative;
     right: -6px;
+}
+.breadcrumbs .fa {
+    margin-right: 7px;
+    font-size: 18px;
 }
 
 .right-side {
