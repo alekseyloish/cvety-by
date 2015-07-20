@@ -59,7 +59,13 @@
 Table of content
 1 - CSS Reset
 2 - Global Styles
-3 -
+3 - Header Styles
+4 - Sidebar Filter Styles
+5 - Section offers Styles
+6 - Popular produtcs Styles
+7 - Our Advantages Styles
+8 - Main footer Styles
+9 - Catalog Styles
 
 
 
@@ -292,6 +298,7 @@ p {
 .main-content {
     position: relative;
     min-height: 450px;
+    padding-top: 30px;
 }
 
 
@@ -627,10 +634,6 @@ p {
 }
 
 
-.main-nav-holder {
-    margin-bottom: 30px;
-}
-
 .main-nav {
     position: relative;
     width: 100%;
@@ -869,6 +872,7 @@ p {
 }
 
 .product__item {
+    position: relative;
     display: inline-block;
     vertical-align: top;
     padding: 30px;
@@ -880,6 +884,7 @@ p {
     text-align: center;
     font-family: 'Comfortaa-Regular';
     font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .product__link {
@@ -925,6 +930,55 @@ p {
     color: #fff;
 }
 
+.product__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 35px;
+    display: block;
+}
+.product__label--action-1 {
+    width: 90px;
+    height: 58px;
+    background-image: url(../images/img-product-label--action-1.png);
+    background-repeat: no-repeat;
+    top: -12px;
+    left: -15px;
+}
+.product__label--action-1 {
+    width: 90px;
+    height: 58px;
+    background-image: url(../images/img-product-label--action-1.png);
+    background-repeat: no-repeat;
+    top: -12px;
+    left: -15px;
+}
+.product__label--action-2 {
+    width: 83px;
+    height: 42px;
+    background-image: url(../images/img-product-label--action-2.png);
+    background-repeat: no-repeat;
+    top: -10px;
+    left: 10px;
+}
+.product__label--action-3 {
+    width: 78px;
+    height: 79px;
+    background-image: url(../images/img-product-label--action-3.png);
+    background-repeat: no-repeat;
+    top: -19px;
+    left: -18px;
+}
+
+.product__label--new {
+    width: 135px;
+    height: 117px;
+    background-image: url(../images/img-product-label--new.png);
+    background-repeat: no-repeat;
+    top: -28px;
+    left: -30px;
+}
 
 
 
@@ -1059,6 +1113,128 @@ p {
     background: #309080;
     color: #fff;
 }
+
+
+
+
+
+
+/*********************************************************\
+
+    9 - Catalog Styles
+
+\*********************************************************/
+.content-wrap {
+    position: relative;
+    min-height: 750px;
+}
+
+.breadcrumbs {
+    margin-bottom: 30px;
+}
+.breadcrumbs ul {
+    padding-left: 15px;
+}
+.breadcrumbs li {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: #309080;
+}
+.breadcrumbs li:not(:last-child) {
+    color: #a8a8a8;
+    padding-right: 10px;
+}
+.breadcrumbs li:not(:last-child):after {
+    content: '>';
+    position: relative;
+    right: -6px;
+}
+
+.right-side {
+    position: relative;
+    margin-left: 320px;
+    z-index: 50;
+}
+
+.page-title {
+    font-family: 'Comfortaa-Bold';
+    font-size: 34px;
+    color: #309080;
+    margin-bottom: 15px;
+}
+
+.sort-panel {
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a8a8a8;
+}
+.sort-panel__heading {
+    display: inline-block;
+    color: #a8a8a8;
+    margin-right: 10px;
+}
+.sort-panel__list {
+    display: inline-block;
+}
+.sort-panel__list li {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+.sort-panel__list li:hover:after,
+.sort-panel__list li.current:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #a8a8a8;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    top: 30px;
+    left: 50%;
+    margin-left: -7px;
+}
+
+.catalog-products {
+    padding-top: 30px;
+}
+
+.pagination-box {
+    margin-bottom: 30px;
+}
+.pagination-box:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.pagination {
+    float: right;
+}
+.pagination li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #a8a8a8;
+    font-size: 14px;
+    color: #a8a8a8;
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
