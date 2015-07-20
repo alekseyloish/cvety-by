@@ -994,6 +994,95 @@ p {
     left: -30px;
 }
 
+.product__size-item {
+    position: absolute;
+    display: inline-block;
+    width: 75px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Comfortaa-Regular';
+    color: #309080;
+}
+.product__size-item--width {
+    top: 15px;
+    left: 50%;
+    margin-left: -37.5px;
+}
+
+.product__size-item--height {
+    top: 150px;
+    right: -15px;
+    transform: rotate(90deg)
+}
+
+.product__size-item:before,
+.product__size-item:after {
+    content: '';
+    position: absolute;
+    width: 47px;
+    height: 10px;
+    top: 50%;
+    margin-top: -5px;
+    background-image: url(../images/bg-product-size--width.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.product__size-item:before {
+    left: -45px;
+    background-position: 0px 0px;
+}
+.product__size-item:after {
+    right: -45px;
+    background-position: -54px 0px;
+}
+
+
+/*
+.product__height:before,
+.product__height:after {
+    content: '';
+    position: absolute;
+    width: 47px;
+    height: 10px;
+    top: 50%;
+    margin-top: -5px;
+    background-image: url(../images/bg-product-size--width.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.product__height:before {
+    left: -45px;
+    background-position: 0px 0px;
+}
+.product__height:after {
+    right: -45px;
+    background-position: -54px 0px;
+}
+*/
+/*
+.product__height:before,
+.product__height:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 47px;
+    left: 50%;
+    margin-left: -5px;
+    background-image: url(../images/bg-product-size--height.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.product__height:before {
+    top: -45px;
+    background-position: 0 0;
+}
+.product__height:after {
+    bottom: -45px;
+    background-position: 0px -54px;
+}
+*/
+
+
 
 
 
