@@ -38,9 +38,28 @@ $(document).ready(function(){
                 }, 200, function() {
                     $(this).css('display', 'none');
                 });
-            
         });
+    });
     
+    
+    // uchecked all radio buttons in filter
+    $(function() {
+        var paramItem = $('.param__item'),
+            paramRadioBtn = paramItem.find('input:radio'),
+            customRadioBtn = paramRadioBtn.next('span');
+        
+        customRadioBtn.find('.fa').on('click', function(e) {
+            e.preventDefault();
+            
+            var $this = $(this),
+                parentBox = $this.closest('.param__list');
+            
+            parentBox.find(paramRadioBtn).each(function() {
+                $(this).prop('checked', false);
+            });
+        });
     });
 
+    
+    
 });

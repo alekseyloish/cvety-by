@@ -723,33 +723,45 @@ p {
     margin-bottom: 8px;
 }
 .param__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 0;
+    margin-left: 5px;
+}
+.param__item-radio input[type="radio"] {
+    display: none;
+}
+.param__item-radio span {
     position: relative;
     top: -1px;
     display: inline-block;
-    vertical-align: middle;
+    padding: 5px 10px;
     font-size: 16px;
     font-family: 'Comfortaa-Regular';
     background: #fff;
-    border-radius: 3px;
-    margin: 5px 0;
-    margin-left: 5px;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
-.param__item:hover {
+.param__item-radio span:hover {
     top: 0;
     box-shadow: none;
 }
 
-.param__item a {
-    padding: 5px 10px;
+.param__item-radio .fa {
+    display: none;
+    cursor: pointer;
+    margin-left: 2px;
 }
 
-.param__item--active {
+.param__item-radio input[type="radio"]:checked + span {
     top: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
     background: #309080;
+    color: #fff;
+}
+.param__item-radio input[type="radio"]:checked + span .fa {
+    display: inline-block;
     color: #fff;
 }
 
