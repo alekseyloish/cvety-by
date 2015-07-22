@@ -19,6 +19,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
+    <!-- Include Lightbox -->
+    <link rel="stylesheet" href="js/lightbox.min/lightbox.css" />
+    
     <!-- Dev Styles -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Responsive Styles -->
@@ -167,6 +170,7 @@
                 <!-- Content Wrapper -->
                 <div class="content-wrap">
                     
+                    <!-- Card Product -->
                     <div class="card-product">
                         <div class="card-product__images">
                             <div class="card-product__main-image">
@@ -174,14 +178,14 @@
                                     <span class="card-product__size-item  card-product__size-item--width">30 см</span>
                                     <span class="card-product__size-item  card-product__size-item--height">55 см</span>
                                 </div>
-                                <a href="#" style="background-image:url(images/img__card-product__main-img.jpg);"></a>
+                                <a href="images/img__card-product__main-img.jpg" style="background-image:url(images/img__card-product__main-img.jpg);" data-lightbox="roadtrip"></a>
                             </div> <!-- end card-product__main-image -->
                             
                             <ul class="card-product__image-list clearfix">
-                                <li><a href="#" style="background-image: url(images/img-product-1.jpg);"></a></li>
-                                <li><a href="#" style="background-image: url(images/img-product-2.jpg);"></a></li>
-                                <li><a href="#" style="background-image: url(images/img-product-4.jpg);"></a></li>
-                                <li><a href="#" style="background-image: url(images/img-product-3.jpg);"></a></li>
+                                <li><a href="images/img-product-1.jpg" style="background-image: url(images/img-product-1.jpg);" data-lightbox="roadtrip"></a></li>
+                                <li><a href="images/img-product-2.jpg" style="background-image: url(images/img-product-2.jpg);" data-lightbox="roadtrip"></a></li>
+                                <li><a href="images/img-product-3.jpg" style="background-image: url(images/img-product-4.jpg);" data-lightbox="roadtrip"></a></li>
+                                <li><a href="images/img-product-4.jpg" style="background-image: url(images/img-product-3.jpg);" data-lightbox="roadtrip"></a></li>
                             </ul> <!-- end card-product__image-list -->
                         </div> <!-- end card-product__images -->
                         
@@ -280,6 +284,202 @@
                             </section> <!-- end card-product__composition -->
                         </div> <!-- end card-product__details -->
                     </div> <!-- end card-product -->
+                    <!-- Card Product End -->
+                    
+                    
+                    <!-- Product Description and Reviews -->
+                    <div class="product-info-holder">
+                        
+                        <!-- Right Sidebar Additionally Info -->
+                        <aside class="additionally-info">
+                            <section class="additionally-item  tags">
+                                <h3 class="additionally-item__heading">Подходит</h3>
+                                <ul class="tags__list">
+                                    <li class="tags__item"><a href="#">Любимой</a></li>
+                                    <li class="tags__item"><a href="#">Девушке</a></li>
+                                    <li class="tags__item"><a href="#">Люблю</a></li>
+                                    <li class="tags__item"><a href="#">Мужчине</a></li>
+                                    <li class="tags__item"><a href="#">Коллеге</a></li>
+                                    <li class="tags__item"><a href="#">Выздоравливай</a></li>
+                                    <li class="tags__item"><a href="#">Учителю</a></li>
+                                </ul> <!-- end tags__list -->
+                            </section> <!-- end additionally-item tags -->
+                            
+                            <section class="additionally-item  guarrantee">
+                                <h3 class="additionally-item__heading">Гарантия качества</h3>
+                                <img src="images/icon__quality.png" class="guarrantee__image" alt="">
+                                <p class="guarrantee__text">
+                                    Если получателю не понравится букет, и Вы сообщите нам об этом в течение 24 часов, мы бесплатно его поменяем.
+                                </p>
+                            </section> <!-- end additionally-item tags -->
+                        </aside>
+                        <!-- Right Sidebar Additionally Info End -->
+                        
+                        
+                        <div class="product-info">
+                            <section class="product-info__item  product-desc">
+                                <h3 class="product-info__heading">Описание</h3>
+                                <div class="product-desc__text">
+                                    <p>
+                                        Красные и белые розы, разбавленные несколькими экзотическими орхидеями – это букет Юлианна. Он прекрасен, величественен, универсален, и достаточно прост. Но именно в его простоте кроется вся гениальность этих цветов.
+                                    </p>
+                                    <p>
+                                        Сочетание этого букета – это талант, полет мысли, безудержная любовь к прекрасному. Невозможно удержаться от восторженных возгласов, глядя на этот букет. Легким дополняющим штрихом здесь является шелковая лента, нежно охватывающая длинные стебли цветов. Букет Юлианна станет лучшим воспоминанием молодости. Подарите этот букет свое королеве сердца, и вы увидите, ее восторгу не будет предела.
+                                    </p>
+                                </div>
+                            </section> <!-- end product-info__item -->
+                            
+                            
+                            <section class="product-info__item  write-review">
+                                <h3 class="product-info__heading">Отзыв о товаре/сервисе</h3>
+                                <div class="review-rating">
+                                    <span class="review-rating__scale-tag">Плохой</span>
+                                    <div class="review-rating__scale">
+                                        <img src="images/img__rating-placeholder.png" alt="">
+                                    </div>
+                                    <span class="review-rating__scale-tag">Отличный</span>
+                                </div> <!-- end review-rating -->
+                                
+                                <div class="write-review__form">
+                                    <form action="" class="review-form" name="write-review" id="write-review" method="get">
+                                        <textarea name="review-text" id="review-text" class="review-form__textarea" placeholder="Комментарий"></textarea>
+                                        
+                                        <div class="review-form__input-wrap  review-form__input-wrap--left">
+                                            <input type="text" name="user-name" id="user-name" class="review-form__input" placeholder="Ваше имя" required >
+                                        </div>
+                                        
+                                        <div class="review-form__input-wrap  review-form__input-wrap--right">
+                                            <input type="email" name="user-email" id="user-email" class="review-form__input" placeholder="Эл. почта" required >
+                                        </div>
+                                        
+                                        <div class="review-form__buttons">
+                                            <button class="review-form__button-cancel">Отмена</button>
+                                            <input type="submit" name="send-review" id="send-review" class="review-form__submit" value="Написать отзыв" >
+                                        </div>
+                                    </form> <!-- end review-form -->
+                                </div> <!-- end write-review__form -->
+                            </section> <!-- end product-info__item  write-review -->
+                            
+                            
+                            <section class="product-info__item  reviews">
+                                <h3 class="product-info__heading">Отзывы</h3>
+                                
+                                <section class="review-post">
+                                    <h4 class="review-post__author">Екатерина</h4>
+                                    <span class="review-post__date">21 июня 2015</span>
+                                    <div class="review-post__rating">
+                                        <img src="images/img__review-rating.png" alt="">
+                                    </div>
+                                    <div class="review-post__text">
+                                        <p>
+                                            Когда заказываешь цветы, ты делаешь это по особому случаю: поздравить или порадовать дорогих и близких тебе людей. И очень важно, чтобы были вовремя выполнены все твои пожелания. И вы всегда соответствуете моим ожиданиям. Спасибо за прекрасную работу.
+                                        </p>
+                                    </div>
+                                </section> <!-- end review-post -->
+                                
+                                <section class="review-post">
+                                    <h4 class="review-post__author">Юлия</h4>
+                                    <span class="review-post__date">13 июня 2015</span>
+                                    <div class="review-post__rating">
+                                        <img src="images/img__review-rating.png" alt="">
+                                    </div>
+                                    <div class="review-post__text">
+                                        <p>
+                                            Спасибо за красивый букет и оперативную доставку, особенно курьеру Игорю!
+                                        </p>
+                                    </div>
+                                </section> <!-- end review-post -->
+                                
+                                <a href="#" class="reviews__more">Смотреть еще отзывы <i class="fa fa-angle-right"></i></a>
+                            </section> <!-- end product-info__item -->
+                        </div> <!-- end product-info -->
+                    </div>
+                    <!-- Product Description and Reviews End -->
+                    
+                    <!-- Related Offers -->
+                    <div class="related-offers">
+                        
+                        <ul class="related-offers__nav">
+                            <li class="related-offers__nav-item  related-offers__item--active" data-class-tab="page-1">
+                                <a href="#" class="related-offers__nav-link">Похожие букеты</a>
+                            </li>
+                            <li class="related-offers__nav-item"  data-class-tab="page-2">
+                                <a href="#" class="related-offers__nav-link">Подарки</a>
+                            </li>
+                            <li class="related-offers__nav-item"  data-class-tab="page-3">
+                                <a href="#" class="related-offers__nav-link">Акции</a>
+                            </li>
+                            <li class="related-offers__nav-item"  data-class-tab="page-4">
+                                <a href="#" class="related-offers__nav-link">Скидки</a>
+                            </li>
+                        </ul> <!-- end related-offers__control -->
+                        
+                        <ul class="related-offers__list">
+                            <li class="related-offers__item  related-offers__item--page-1  related-offers__item--active">
+                                <div class="tab-container  product">
+                                    <ul class="product__list">
+                                        <li class="product__item">
+                                            <a href="#" class="product__link">
+                                                <span class="product__image-placeholder" style="background-image: url(images/img-product-1.jpg);"></span>
+                                                <h3 class="product__title">Дарю тебе лето</h3>
+                                            </a>
+                                            <span class="product__price">3000 руб.</span>
+                                            <button class="product__button-buy">Купить</button>
+                                        </li> <!-- end product__item -->
+
+                                        <li class="product__item">
+                                            <a href="#" class="product__link">
+                                                <span class="product__image-placeholder" style="background-image: url(images/img-product-2.jpg);"></span>
+                                                <h3 class="product__title">С любовью и благадарностью</h3>
+                                            </a>
+                                            <span class="product__price">3499 руб.</span>
+                                            <button class="product__button-buy">Купить</button>
+                                        </li> <!-- end product__item -->
+
+                                        <li class="product__item">
+                                            <a href="#" class="product__link">
+                                                <span class="product__image-placeholder" style="background-image: url(images/img-product-3.jpg);"></span>
+                                                <h3 class="product__title">Самой лучшей в мире</h3>
+                                            </a>
+                                            <span class="product__price">2899 руб.</span>
+                                            <button class="product__button-buy">Купить</button>
+                                        </li> <!-- end product__item -->
+
+                                        <li class="product__item">
+                                            <a href="#" class="product__link">
+                                                <span class="product__image-placeholder" style="background-image: url(images/img-product-4.jpg);"></span>
+                                                <h3 class="product__title">Исполнения желаний</h3>
+                                            </a>
+                                            <span class="product__price">4699 руб.</span>
+                                            <button class="product__button-buy">Купить</button>
+                                        </li> <!-- end product__item -->
+                                    </ul> <!-- end product__list -->
+                                </div> <!-- end tab-container -->
+                            </li> <!-- end related-offers__item -->
+                            
+                            
+                            <li class="related-offers__item  related-offers__item--page-2">
+                                <div class="tab-container  product">
+                                    <span>Блок с подарками</span>
+                                </div> <!-- end tab-container -->
+                            </li> <!-- end related-offers__item -->
+                            
+                            
+                            <li class="related-offers__item  related-offers__item--page-3">
+                                <div class="tab-container  product">
+                                    <span>Блок Акции</span>
+                                </div> <!-- end tab-container -->
+                            </li> <!-- end related-offers__item -->
+                            
+                            
+                            <li class="related-offers__item  related-offers__item--page-4">
+                                <div class="tab-container  product">
+                                    <span>Блок Скидки</span>
+                                </div> <!-- end tab-container -->
+                            </li> <!-- end related-offers__item -->
+                        </ul> <!-- end related-offers__list -->
+                    </div>
+                    <!-- Related Offers End -->
                     
                 </div>
                 <!-- Content Wrapper End -->
@@ -347,6 +547,9 @@
     <!-- Scripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/modernizr-2.6.2.min.js"></script>
+    
+    <!-- Include Lightbox -->
+    <script src="js/lightbox.min/lightbox.min.js"></script>
     
     <!-- Dev Scripts -->
     <script src="js/scripts.js"></script>

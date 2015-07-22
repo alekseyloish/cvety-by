@@ -59,6 +59,24 @@ $(document).ready(function(){
             });
         });
     });
+    
+    
+    // Tabs
+    $(function() {
+        $('.related-offers__nav-link').on('click', function(e) {
+            e.preventDefault();
+            
+            var item = $(this).closest('.related-offers__nav-item'),
+                tabsContent = $('.related-offers__item'), 
+                itemPos = item.data('class-tab'); 
+            
+            tabsContent.filter('.related-offers__item--' + itemPos)
+                .add(item)
+                .addClass('related-offers__item--active')
+                .siblings()
+                .removeClass('related-offers__item--active');
+        });
+    });
 
     
     
