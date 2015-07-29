@@ -1247,6 +1247,9 @@ p:last-child {
     color: #309080;
     margin-bottom: 15px;
 }
+.page-title--center {
+    text-align: center;
+}
 
 .sort-panel {
     position: relative;
@@ -2081,7 +2084,6 @@ p:last-child {
     font-family: 'Comfortaa-Regular';
     font-size: 20px;
 }
-
 .product-comparison__remove-item {
     position: absolute;
     top: 10px;
@@ -2092,7 +2094,6 @@ p:last-child {
     background-repeat: no-repeat;
     cursor: pointer;
 }
-
 .product-comparison__link {
     display: block;
     width: 100%;
@@ -2106,30 +2107,25 @@ p:last-child {
     background-size: contain;
     margin-bottom: 15px;
 }
-
 .product-comparison__title {
     display: block;
     font-size: 20px;
     min-height: 60px;
     margin-bottom: 20px;
 }
-
 .product-comparison__price {
     display: block;
     margin-bottom: 20px;
     color: #309080;
 }
-
 .product-comparison__rating {
     margin: 20px 0;
 }
-
 .product-comparison__sizes {
     font-family: 'Arian-Regular';
     font-size: 16px;
     margin: 25px 0;
 }
-
 .product-comparison__composition {
     margin-bottom: 25px;
     font-family: 'Arian-Regular';
@@ -2189,10 +2185,137 @@ p:last-child {
 
 
 
+/*********************************************************\
+
+    14 - Registration Styles
+
+\*********************************************************/
+.sign-up {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.sign-up h4 {
+    margin: 25px 0;
+}
+
+.sign-up__social-buttons {
+    
+}
+
+.sign-up__social {
+    display: inline-block;
+    margin: 0 15px;
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.sign-up__social > a {
+    display: block;
+    width: 235px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.sign-up__social .fa {
+    position: relative;
+    top: 3px;
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.sign-up__social--vk {
+    border-color: #6383a8;
+    color: #6383a8;
+}
+.sign-up__social--vk:hover {
+    background: #6383a8;
+    color: #fff;
+}
+
+.sign-up__social--fb {
+    border-color: #3a5795;
+    color: #3a5795;
+}
+.sign-up__social--fb:hover {
+    background: #3a5795;
+    color: #fff;
+}
+
+.sign-up__social--ok {
+    border-color: #ee9651;
+    color: #ee9651;
+}
+.sign-up__social--ok .fa {
+    display: inline-block;
+    width: 13px;
+    height: 22px;
+    background-image: url(../images/icon__soc-ok.png);
+}
+.sign-up__social--ok:hover {
+    background: #ee9651;
+    color: #fff;
+}
+.sign-up__social--ok:hover .fa {
+    background-position: -17px 0px;
+}
 
 
+.sign-up__form {
+}
 
+.form-register__item {
+    padding-right: 200px;
+    margin-bottom: 30px;
+}
+.form-register__label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 180px;
+    margin-right: 20px;
+    text-align: right;
+}
+.form-register__input {
+    width: 435px;
+    height: 50px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-size: 18px;
+    padding-left: 15px;
+}
 
+.form-register__checkbox {
+    display: inline-block;
+    width: 435px;
+    text-align: left;
+    margin-right: 0;
+    font-size: 18px;
+}
 
+.form-register__submit {
+    width: 315px;
+    height: 50px;
+    border-radius: 4px;
+    font-family: 'Comfortaa-Regular';
+    font-size: 20px;
+    border: 1px solid transparent;
+    background: #fe4580;
+    color: #fff;
+    
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.form-register__submit:hover {
+    background: #fff;
+    color: #fe4580;
+    border-color: #fe4580;
+}
 
 
