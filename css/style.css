@@ -2442,6 +2442,7 @@ p:last-child {
 \*********************************************************/
 .posts {
     width: 100%;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 .posts:after {
@@ -2478,8 +2479,26 @@ p:last-child {
     font-family: 'Comfortaa-Bold';
     font-size: 25px;
     color: #309080;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 .post__title:hover {
+    color: #fe4580;
+}
+.post__title a {
+    display: inline;
+}
+
+.post__text {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.post__read-more {
+    font-family: 'Comfortaa-Regular';
+    color: #309080;
+}
+.post__read-more:hover {
     color: #fe4580;
 }
 
