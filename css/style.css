@@ -1250,6 +1250,7 @@ p:last-child {
 }
 .page-title--center {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .sort-panel {
@@ -2208,7 +2209,7 @@ p:last-child {
 .sign-up__social {
     display: inline-block;
     margin: 0 15px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.75);
     border: 1px solid transparent;
     border-radius: 4px;
     
@@ -2314,7 +2315,7 @@ p:last-child {
     transition: all .3s ease-in-out;
 }
 .form-register__submit:hover {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.75);
     color: #fe4580;
     border-color: #fe4580;
 }
@@ -2442,7 +2443,6 @@ p:last-child {
 \*********************************************************/
 .posts {
     width: 100%;
-    padding-top: 10px;
     padding-bottom: 50px;
 }
 .posts:after {
@@ -2456,6 +2456,12 @@ p:last-child {
     width: 50%;
     padding: 10px;
 }
+.post a {
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
 .post__inner {
     padding: 15px;
     background: #fff;
@@ -2501,6 +2507,288 @@ p:last-child {
 .post__read-more:hover {
     color: #fe4580;
 }
+
+
+
+
+
+/*********************************************************\
+
+    18 - Contacts Page Styles
+
+\*********************************************************/
+.contacts-page {
+    position: relative;
+    font-family: 'Comfortaa-Regular';
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contacts-page__left-side {
+    float: left;
+    width: 50%;
+}
+.contacts-page__right-side {
+    float: right;
+    width: 50%;
+}
+
+
+.main-phones {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 60px;
+}
+.main-phones__bg {
+    position: absolute;
+    top: 0;
+    left: 112px;
+    width: 395px;
+    height: 351px;
+    background-image: url(../images/bg_main-phones.png);
+    z-index: -10;
+}
+
+.main-phones__box {
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.main-phones__list {
+    margin-bottom: 10px;
+}
+.main-phones__list li {
+    text-align: center;
+    font-family: 'Comfortaa-Bold';
+    font-size: 30px;
+    line-height: 1.25;
+}
+.main-phones__list li:nth-child(1),
+.main-phones__list li:nth-child(2) {
+    letter-spacing: -1.8px
+}
+
+.main-phones__apps li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-phones__button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #fe4580;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.main-phones__button:hover {
+    background: rgba(255, 255, 255, 0.75);
+    color: #fe4580;
+    border-color: #fe4580;
+}
+
+
+.main-contact-email {
+    margin-bottom: 75px;
+    position: relative;
+    z-index: 10;;
+}
+.main-contact-email__bg {
+    position: absolute;
+    top: -18px;
+    left: 150px;
+    width: 179px;
+    height: 125px;
+    background-image: url(../images/bg_main-email.png);
+    z-index: -10;
+}
+
+.main-contact-email a {
+    font-family: 'Arian-Bold';
+    color: #309080;
+    padding-top: 5px;
+    font-size: 24px;
+}
+
+
+.main-contact-address {
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+}
+.main-contact-address__bg {
+     position: absolute;
+    top: -10px;
+    left: 115px;
+    width: 156px;
+    height: 152px;
+    background-image: url(../images/bg_main-address.png);
+    z-index: -10;
+}
+.main-contact-address span {
+    display: block;
+    text-align: left;
+    padding-top: 15px;
+    font-family: 'Arian-Bold';
+    line-height: 1.2;
+}
+
+
+.feedback-form-holder {
+    width: 435px;
+    margin: 0 auto 50px;
+    position: relative;
+    z-index: 20;
+}
+
+.feedback-form-holder__bg {
+    position: absolute;
+    top: 20px;
+    left: -86px;
+    width: 526px;
+    height: 417px;
+    background-image: url(../images/bg_contact-form.png);
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+.feedback-form {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.feedback-form__input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    font-family: 'Arian-Regular';
+    font-size: 16px;
+    outline: none;
+}
+
+.feedback-form__textarea {
+    display: block;
+    width: 100%;
+    height: 145px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: 'Arian-Regular';
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    margin-bottom: 25px;
+}
+
+.feedback-form__submit {
+    width: 235px;
+    height: 50px;
+    color: #fff;
+    background: #fe4580;
+    border: 1px solid transparent;
+    font-size: 20px;
+    border-radius: 5px;
+    
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.feedback-form__submit:hover {
+    color: #fe4580;
+    border-color: #fe4580;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+.follow-social {
+    position: relative;
+    z-index: 20;
+}
+
+.follow-social__bg {
+    position: absolute;
+    top: -38px;
+    left: 21px;
+    width: 588px;
+    height: 127px;
+    background-image: url(../images/bg_vk.png);
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+.follow-social__button {
+    display: inline-block;
+    width: 235px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 25px;
+    background: #6383a8;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: 'Arian-Regular';
+    font-size: 16px;
+    
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.follow-social__button:hover {
+    border-color: #6383a8;
+    background: rgba(255, 255, 255, 0.75);
+    color: #6383a8;
+}
+
+.follow-social__button .fa {
+    position: relative;
+    top: 3px;
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+
+.thanks {
+    clear: both;
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+    z-index: 20;
+}
+.thanks__bg {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    margin-left: -64px;
+    width: 128px;
+    height: 142px;
+    background-image: url(../images/bg_happiness.png);
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+.thanks h3 {
+    font-size: 35px;
+    color: #fe4580;
+}
+
+
+
+
 
 
 
