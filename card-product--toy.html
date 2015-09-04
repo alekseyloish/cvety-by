@@ -195,16 +195,8 @@
                                     <span class="card-product__size-item  card-product__size-item--width">30 см</span>
                                     <span class="card-product__size-item  card-product__size-item--height">55 см</span>
                                 </div>
-                                <a href="images/img__card-product__main-img.jpg" style="background-image:url(images/img__card-product__main-img.jpg);" data-lightbox="roadtrip"></a>
+                                <a href="images/img__card-product__main-img.jpg" style="background-image:url(images/img__toy-main-image.jpg);" data-lightbox="roadtrip"></a>
                             </div> <!-- end card-product__main-image -->
-                            
-                            <ul class="card-product__image-list clearfix">
-                                <li><a href="images/img-product-1.jpg" style="background-image: url(images/img-product-1.jpg);" data-lightbox="roadtrip"></a></li>
-                                <li><a href="images/img-product-2.jpg" style="background-image: url(images/img-product-2.jpg);" data-lightbox="roadtrip"></a></li>
-                                <li><a href="images/img-product-3.jpg" style="background-image: url(images/img-product-4.jpg);" data-lightbox="roadtrip"></a></li>
-                                
-                                <li class="video-review"><a href="#" style="background-image: url(images/icon__youtube-big.png);">Видео-обзор</a></li>
-                            </ul> <!-- end card-product__image-list -->
                         </div> <!-- end card-product__images -->
                         
                         <div class="card-product__details">
@@ -223,29 +215,16 @@
                             <div class="card-product__price-options">
                                 <ul class="card-product__options">
                                     <li class="card-product__option">
-                                        <label for="size-bouquet-standart" class="card-product__option-choice">
-                                            <input type="radio" name="size-bouquet" id="size-bouquet-standart" checked >
-                                            <i></i>
-                                            <span>Стандарт</span>
-                                        </label>
-                                        <span class="card-product__price">3000 руб.</span>
-                                    </li> <!-- end card-product__option -->
-                                    
-                                    <li class="card-product__option">
-                                        <label for="size-bouquet-premium" class="card-product__option-choice">
-                                            <input type="radio" name="size-bouquet" id="size-bouquet-premium" >
-                                            <i></i>
-                                            <span>Премиум</span>
-                                        </label>
-                                        <span class="card-product__price">5000 руб.</span>
-                                    </li> <!-- end card-product__option -->
-                                    
-                                    <li class="card-product__option">
-                                        <label for="size-bouquet-vip" class="card-product__option-choice">
-                                            <input type="radio" name="size-bouquet" id="size-bouquet-vip" >
-                                            <i></i>
-                                            <span>VIP</span>
-                                        </label>
+                                        <div class="card-product__amount-product">
+                                            <div class="amount-product">
+                                                <span class="amount-product__title">Кол-во:</span>
+                                                <div class="amount-product__count">
+                                                    <button class="amount-product__btn  amount-product__btn--minus">-</button>
+                                                    <input type="text" class="amount-product__input" value="1" maxlength="2">
+                                                    <button class="amount-product__btn  amount-product__btn--plus">+</button>
+                                                </div> <!-- end .amount-product__count -->
+                                            </div> <!-- end .amount-product -->
+                                        </div> <!-- end .card-product__amount-product -->
                                         <span class="card-product__price  card-product__price--old-price">8000 руб.</span>
                                         <span class="card-product__price  card-product__price--discount">6500 руб.</span>
                                     </li> <!-- end card-product__option -->
@@ -265,55 +244,6 @@
                                 <a href="#" class="card-product__button  card-product__button--buy">Купить</a>
                                 <a href="#" class="card-product__button  card-product__button--order">Заказать по телефону</a>
                             </div> <!-- end card-product__buttons -->
-                            
-                            <section class="card-product__payments">
-                                <h3>Способы оплаты</h3>
-                                
-                                <ul class="card-product__payments-list">
-                                    <li><img src="images/icon__payments-min-1.png" alt=""></li>
-                                    <li><img src="images/icon__payments-min-2.png" alt=""></li>
-                                    <li><img src="images/icon__payments-min-3.png" alt=""></li>
-                                    <li><img src="images/icon__payments-min-4.png" alt=""></li>
-                                    <li><img src="images/icon__payments-min-5.png" alt=""></li>
-                                    <li><img src="images/icon__payments-min-6.png" alt=""></li>
-                                    <li><img src="images/icon__payments-min-7.png" alt=""></li>
-                                </ul>
-                            </section>
-                            
-                            <section class="card-product__composition">
-                                <h3>Состав букета:</h3>
-                                <ul class="card-product__composition-list">
-                                    <li class="card-product__composition-item">
-                                        <span>Орхидея белая</span>
-                                        <mark>7 шт.</mark>
-                                    </li>
-                                    
-                                    <li class="card-product__composition-item">
-                                        <span>Роза кремовая</span>
-                                        <mark>8 шт.</mark>
-                                    </li>
-                                    
-                                    <li class="card-product__composition-item">
-                                        <span>Ирис</span>
-                                        <mark>2 шт.</mark>
-                                    </li>
-                                    
-                                    <li class="card-product__composition-item">
-                                        <span>Салал</span>
-                                        <mark>7 шт.</mark>
-                                    </li>
-                                    
-                                    <li class="card-product__composition-item">
-                                        <span>Фетр</span>
-                                        <mark>1 шт.</mark>
-                                    </li>
-                                    
-                                    <li class="card-product__composition-item">
-                                        <span>Лента</span>
-                                        <mark>1 шт.</mark>
-                                    </li>
-                                </ul> <!-- end card-product__composition-list -->
-                            </section> <!-- end card-product__composition -->
                         </div> <!-- end card-product__details -->
                     </div> <!-- end card-product -->
                     <!-- Card Product End -->

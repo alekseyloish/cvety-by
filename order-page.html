@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Cvety.by - Заказ и доставка цветов по Минску и Беларуси</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <!-- Include Lightbox -->
+    <link rel="stylesheet" href="js/lightbox.min/lightbox.css" />
+    
+    <!-- Include owlCarousel styles -->
+    <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
+    
+    <!-- Include Custom ScrollBar plugin styles -->
+    <link rel="stylesheet" href="js/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    
+    <!-- Dev Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive Styles -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    
+    
+
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <div class="center-wrapper">
+            
+            <!-- Main Header -->
+            <header class="main-header" id="header">
+                <div class="top-panel clearfix">
+                    <nav class="second-nav">
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav> <!-- second nav -->
+                    
+                    <ul class="views-param">
+                        <li class="views-param__item">
+                            <select name="choice-lang" id="choice-lang">
+                                <option value="RU">RU</option>
+                                <option value="BY">BY</option>
+                                <option value="UA">UA</option>
+                                <option value="US">US</option>
+                            </select>
+                        </li>
+                        <li class="views-param__item">
+                            <select name="choice-currency" id="choice-currency">
+                                <option value="RUB">RUB</option>
+                                <option value="BYR">BYR</option>
+                                <option value="UAH">UAH</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </li>
+                    </ul> <!-- end views-param -->
+                </div> <!-- end top-panel -->
+                
+                <div class="header-content clearfix">
+                    <div class="logo-and-location">
+                        <div class="logo">
+                            <a href="#"><img src="images/logo.png" alt="Cvety.by"></a>
+                        </div>
+                        <div class="location">
+                            <i class="location__icon"></i>
+                            <a href="#" class="location__choice">Санкт-Петербург</a>
+                        </div>
+                    </div> <!-- end logo-and-location -->
+
+                    <div class="contacts-and-search">
+                        <div class="contacts">
+                            <p class="contacts__phone-inline">
+                                <span>+ 375 29 60-99-444</span>, <span>+ 375 29 60-99-444</span>
+                                <a href="#" class="contacts__more">Еще <i class="fa fa-caret-down"></i></a>
+                            </p>
+                            
+                            <div class="full-contacts">
+                                <div class="full-contacts__inner  clearfix">
+                                    <span class="full-contacts__close"><i class="fa fa-caret-up"></i></span>
+                                    <ul class="full-contacts__phones">
+                                        <li><span>+ 375 29 60-99-444</span></li>
+                                        <li><span>+ 375 29 57-00-622</span></li>
+                                        <li><span>+ 1 415 992-64-55</span></li>
+                                    </ul>
+                                    <div class="full-contacts__other">
+                                        <ul class="contact-app">
+                                            <li><a href="#"><img src="images/icon-contact-app__viber.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/icon-contact-app__skype.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/icon-contact-app__whats-app.png" alt=""></a></li>
+                                        </ul> <!-- end contact-app -->
+                                        <a href="#" class="order-callback">Заказать обратный звонок</a>
+                                    </div> <!-- end full-contacts__other -->
+                                </div>
+                            </div> <!-- end full-contacts -->
+                        </div> <!-- end contacts -->
+
+                        <div class="search">
+                            <form action="" class="search__form" method="">
+                                <input type="text" class="search__input" placeholder="Поиск">
+                                <input type="submit" class="search__submit" value="">
+                            </form>
+                        </div> <!-- end search -->
+                    </div> <!-- end contacts-and-search -->
+                    
+                    <div class="basket-and-auth">
+                        <div class="control-panel">
+                            <ul class="control-panel__list  clearfix">
+                                <li class="control-panel__item  control-panel__favorites-control">
+                                    <div class="favorites-control">
+                                        <a href="#" class="favorites-control__icon"></a>
+                                        <span class="control-panel__value  is-active">5</span>
+                                    </div>
+                                </li>
+                                
+                                <li class="control-panel__item  control-panel__comparison-control">
+                                    <div class="comparison-control">
+                                        <a href="#" class="comparison-control__icon"></a>
+                                        <span class="control-panel__value  is-active">2</span>
+                                    </div>
+                                </li>
+                                
+                                <li class="control-panel__item  control-panel__basket-control">
+                                    <div class="basket-control">
+                                        <a href="#" class="basket-control__icon  basket-control__icon--active"></a>
+                                        <span class="basket-control__value">3</span>
+                                    </div>
+                                </li>
+                            </ul> <!-- end .control-panel__list -->
+                        </div> <!-- end .control-panel -->
+                        
+                        <ul class="user-auth">
+                            <li><a href="#">Войти</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul> <!-- end user-auth -->
+                    </div> <!-- end basket-and-auth -->
+                </div> <!-- end header-content -->
+                
+                <div class="main-nav-holder">
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="#">Цветы</a></li>
+                            <li><a href="#">Букеты</a></li>
+                            <li><a href="#">Композиции</a></li>
+                            <li><a href="#">Поводы</a></li>
+                            <li><a href="#">Подарки</a></li>
+                            <li class="main-nav__create-bouquet"><a href="#">Создать свой букет</a></li>
+                        </ul>
+                    </nav> <!-- end main-nav -->
+                </div> <!-- end main-nav-holder -->
+            </header>
+            <!-- Main Header End -->
+            
+            
+            <!-- Main Content -->
+            <div class="main-content clearfix">
+                <!-- Content Wrapper -->
+                <div class="content-wrap">
+                    
+                    <!-- Order Page -->
+                    <div class="order-page">
+                        <div class="order-page__inner  tabs">
+                            <ul class="order-nav  tabs__controls">
+                                <li class="order-nav__item  tabs__controls-item  is-active" data-class-tab="page-1"><a href="#">Корзина</a></li>
+                                <li class="order-nav__item  tabs__controls-item" data-class-tab="page-2"><a href="#">Получатель</a></li>
+                                <li class="order-nav__item  tabs__controls-item" data-class-tab="page-3"><a href="#">Ваши контакты</a></li>
+                                <li class="order-nav__item  tabs__controls-item" data-class-tab="page-4"><a href="#">Оплата</a></li>
+                            </ul>
+                            <ul class="order-content  tabs__content">
+                                <li class="order-content__item  tabs__content-item  tabs__content-item--page-1  is-active">
+                                    <div class="order-basket">
+                                        <table class="table-basket">
+                                            <tr class="table-basket__row">
+                                                <td class="t-image">
+                                                    <a href="#"><img src="images/img-product-1.jpg" alt=""></a>
+                                                </td>
+                                                <td class="t-title">
+                                                    <a href="#">Исполнение желаний</a>
+                                                </td>
+                                                <td class="t-amount  amount">
+                                                    <button class="amount__btn  amount__btn--minus">-</button>
+                                                    <input type="text" class="amount__input" value="1" maxlength="2">
+                                                    <button class="amount__btn  amount__btn--plus">+</button>
+                                                </td>
+                                                <td class="t-price">1350 руб.</td>
+                                                <td class="t-remove">
+                                                    <span class="remove-button"></span>
+                                                </td>
+                                            </tr> <!-- end .table-basket__row -->
+                                            
+                                            <tr class="table-basket__row">
+                                                <td class="t-image">
+                                                    <a href="#"><img src="images/img-product-2.jpg" alt=""></a>
+                                                </td>
+                                                <td class="t-title">
+                                                    <a href="#">Lorem ipsum.</a>
+                                                </td>
+                                                <td class="t-amount  amount">
+                                                    <button class="amount__btn  amount__btn--minus">-</button>
+                                                    <input type="text" class="amount__input" value="1" maxlength="2">
+                                                    <button class="amount__btn  amount__btn--plus">+</button>
+                                                </td>
+                                                <td class="t-price">1350 руб.</td>
+                                                <td class="t-remove">
+                                                    <span class="remove-button"></span>
+                                                </td>
+                                            </tr> <!-- end .table-basket__row -->
+                                            
+                                            <tr class="table-basket__row">
+                                                <td class="t-image">
+                                                    <a href="#"><img src="images/img-product-3.jpg" alt=""></a>
+                                                </td>
+                                                <td class="t-title">
+                                                    <a href="#">Lorem ipsum dolor sit.</a>
+                                                </td>
+                                                <td class="t-amount  amount">
+                                                    <button class="amount__btn  amount__btn--minus">-</button>
+                                                    <input type="text" class="amount__input" value="1" maxlength="2">
+                                                    <button class="amount__btn  amount__btn--plus">+</button>
+                                                </td>
+                                                <td class="t-price">1350 руб.</td>
+                                                <td class="t-remove">
+                                                    <span class="remove-button"></span>
+                                                </td>
+                                            </tr> <!-- end .table-basket__row -->
+                                        </table> <!-- end .table-basket -->
+                                    </div> <!-- end .order-basket -->
+                                    
+                                    <div class="bonus-gifts">
+                                        <h3 class="bonus-gifts__heading">Подарок к букету</h3>
+                                        
+                                        <div class="gifts-holder">
+                                            
+                                            <div class="gifts__wrap">
+                                                <ul class="gifts__list  carousel"  data-max-items="6"  data-tablet-items="3"  data-slide-speed="300"  data-auto-play-interval="2500">
+                                                    <li class="gifts__item">
+                                                        <div class="gifts__checkbox">
+                                                            <label class="styled-checkbox">
+                                                                <input type="checkbox" name="" id="" />
+                                                                <i class="icon"></i>
+                                                                
+                                                                <div class="gifts__image-box">
+                                                                    <img src="images/img__gifts-1.png" alt="" />
+                                                                </div>
+                                                                <span class="gifts__title">Конфеты "Raffaello"</span>
+                                                                <span class="gifts__price">300 руб.</span>
+                                                            </label>
+                                                        </div> <!-- end .gifts__checkbox -->
+                                                    </li>
+                                                    
+                                                    
+                                                    <li class="gifts__item">
+                                                        <div class="gifts__checkbox">
+                                                            <label class="styled-checkbox">
+                                                                <input type="checkbox" name="" id="" />
+                                                                <i class="icon"></i>
+                                                                
+                                                                <div class="gifts__image-box">
+                                                                    <img src="images/img__gifts-2.png" alt="" />
+                                                                </div>
+                                                                <span class="gifts__title">Конфеты "Raffaello"</span>
+                                                                <span class="gifts__price">300 руб.</span>
+                                                            </label>
+                                                        </div> <!-- end .gifts__checkbox -->
+                                                    </li>
+                                                    
+                                                    
+                                                    <li class="gifts__item">
+                                                        <div class="gifts__checkbox">
+                                                            <label class="styled-checkbox">
+                                                                <input type="checkbox" name="" id="" />
+                                                                <i class="icon"></i>
+                                                                
+                                                                <div class="gifts__image-box">
+                                                                    <img src="images/img__gifts-3.png" alt="" />
+                                                                </div>
+                                                                <span class="gifts__title">Конфеты "Raffaello"</span>
+                                                                <span class="gifts__price">300 руб.</span>
+                                                            </label>
+                                                        </div> <!-- end .gifts__checkbox -->
+                                                    </li>
+                                                    
+                                                    
+                                                    <li class="gifts__item">
+                                                        <div class="gifts__checkbox">
+                                                            <label class="styled-checkbox">
+                                                                <input type="checkbox" name="" id="" />
+                                                                <i class="icon"></i>
+                                                                
+                                                                <div class="gifts__image-box">
+                                                                    <img src="images/img__gifts-3.png" alt="" />
+                                                                </div>
+                                                                <span class="gifts__title">Конфеты "Raffaello"</span>
+                                                                <span class="gifts__price">300 руб.</span>
+                                                            </label>
+                                                        </div> <!-- end .gifts__checkbox -->
+                                                    </li>
+                                                    
+                                                    
+                                                    <li class="gifts__item">
+                                                        <div class="gifts__checkbox">
+                                                            <label class="styled-checkbox">
+                                                                <input type="checkbox" name="" id="" />
+                                                                <i class="icon"></i>
+                                                                
+                                                                <div class="gifts__image-box">
+                                                                    <img src="images/img__gifts-1.png" alt="" />
+                                                                </div>
+                                                                <span class="gifts__title">Конфеты "Raffaello"</span>
+                                                                <span class="gifts__price">300 руб.</span>
+                                                            </label>
+                                                        </div> <!-- end .gifts__checkbox -->
+                                                    </li>
+                                                    
+                                                    
+                                                    <li class="gifts__item">
+                                                        <div class="gifts__checkbox">
+                                                            <label class="styled-checkbox">
+                                                                <input type="checkbox" name="" id="" />
+                                                                <i class="icon"></i>
+                                                                
+                                                                <div class="gifts__image-box">
+                                                                    <img src="images/img__gifts-2.png" alt="" />
+                                                                </div>
+                                                                <span class="gifts__title">Конфеты "Raffaello"</span>
+                                                                <span class="gifts__price">300 руб.</span>
+                                                            </label>
+                                                        </div> <!-- end .gifts__checkbox -->
+                                                    </li>
+                                                    
+                                                    
+                                                    <li class="gifts__item">
+                                                        <div class="gifts__checkbox">
+                                                            <label class="styled-checkbox">
+                                                                <input type="checkbox" name="" id="" />
+                                                                <i class="icon"></i>
+                                                                
+                                                                <div class="gifts__image-box">
+                                                                    <img src="images/img__gifts-3.png" alt="" />
+                                                                </div>
+                                                                <span class="gifts__title">Конфеты "Raffaello"</span>
+                                                                <span class="gifts__price">300 руб.</span>
+                                                            </label>
+                                                        </div> <!-- end .gifts__checkbox -->
+                                                    </li>
+                                                    
+                                                    
+                                                    <li class="gifts__item">
+                                                        <div class="gifts__checkbox">
+                                                            <label class="styled-checkbox">
+                                                                <input type="checkbox" name="" id="" />
+                                                                <i class="icon"></i>
+                                                                
+                                                                <div class="gifts__image-box">
+                                                                    <img src="images/img__gifts-1.png" alt="" />
+                                                                </div>
+                                                                <span class="gifts__title">Конфеты "Raffaello"</span>
+                                                                <span class="gifts__price">300 руб.</span>
+                                                            </label>
+                                                        </div> <!-- end .gifts__checkbox -->
+                                                    </li>
+                                                </ul> <!-- end .gifts-carousel__list -->
+                                            </div> <!-- end .gifts-carousel__wrap -->
+
+                                            <div class="gifts__control  carousel-control">
+                                                <a href="#" class="gifts__arrow  gifts__arrow--prev  carousel-control__arrow  carousel-control__arrow--prev"></a>
+                                                <a href="#" class="gifts__arrow  gifts__arrow--next  carousel-control__arrow  carousel-control__arrow--next"></a>
+                                            </div>
+                                            
+                                        </div> <!-- end .gifts-holder -->
+                                    </div> <!-- end .bonus-gifts -->
+                                    
+                                    <div class="checkout-info  clearfix">
+                                        <div class="check-delivery">
+                                            <h3>Доставка</h3>
+                                            
+                                            <div class="check-item">
+                                                <label class="check-item__label">Выберите город:</label>
+                                                <input type="text" name="" id="" class="check-item__input  check-item__input--delivery" placeholder="Минск" />
+                                            </div>
+                                            
+                                            <div class="check-item">
+                                                <label class="check-item__label">Стоимость:</label>
+                                                <span class="check-item__value">бесплатно</span>
+                                            </div>
+                                        </div> <!-- end .check-delivery -->
+                                        
+                                        <div class="check-postcard">
+                                            <h3>Открытка</h3>
+                                            
+                                            <div class="check-postcard__checkbox">
+                                                <label class="styled-checkbox">
+                                                    <input type="checkbox" name="" id="" />
+                                                    <i class="icon"></i>
+                                                    <span>Добавить открытку (бесплатно)</span>
+                                                </label>
+                                            </div> <!-- end .check-postcard__checkbox -->
+                                            
+                                            <div class="check-postcard__details  postcard  clearfix">
+                                                
+                                                <div class="postcard__slider-holder">
+                                                    <div class="postcard__slider-wrap">
+                                                        <ul class="postcard__slider  carousel"  data-max-items="1"  data-slide-speed="300">
+                                                            <li class="postcard__slider-item">
+                                                                <a href="#"><img src="images/img__postcard-image-1.png" alt="" /></a>
+                                                            </li>
+                                                            <li class="postcard__slider-item">
+                                                                <a href="#"><img src="images/img__postcard-image-1.png" alt="" /></a>
+                                                            </li>
+                                                            <li class="postcard__slider-item">
+                                                                <a href="#"><img src="images/img__postcard-image-1.png" alt="" /></a>
+                                                            </li>
+                                                        </ul> <!-- end .postcard__slider -->
+                                                    </div> <!-- end .postcard__slider-wrap -->
+                                                    
+                                                    <div class="carousel-control">
+                                                        <a href="#" class="postcard__arrow  postcard__arrow--prev  carousel-control__arrow  carousel-control__arrow--prev"></a>
+                                                        <a href="#" class="postcard__arrow  postcard__arrow--next  carousel-control__arrow  carousel-control__arrow--next"></a>
+                                                    </div>
+                                                </div> <!-- end .postcard__slider-holder -->
+                                                
+                                                <div class="postcard__text">
+                                                    <textarea name="" id="" class="postcard__textarea" placeholder="Текст открытки"></textarea>
+                                                </div>
+                                            </div> <!-- end .check-postcard__details -->
+                                        </div> <!-- end .check-postcard -->
+                                    </div> <!-- end .checkout-info -->
+                                    
+                                    <div class="checkout-control  clearfix">
+                                        <button class="checkout-control__btn  checkout-control__btn--next">Далее</button>
+                                        <div class="checkout-result">
+                                            Итого: <span class="value">1350 руб.</span>
+                                        </div>
+                                    </div> <!-- end checkout-control -->
+                                </li> <!-- end .order-content__item -->
+                                
+                                <li class="order-content__item  tabs__content-item  tabs__content-item--page-2">
+                                    <div class="recipient-info-holder">
+                                        <div class="recipient-info">
+                                            <ul class="delivery-mode">
+                                                <li class="delivery-mode__item">
+                                                    <label class="styled-radio">
+                                                        <input type="radio" name="delivery-mode" id="" checked>
+                                                        <i class="icon"></i> Доставить мне
+                                                    </label>
+                                                </li>
+                                                <li class="delivery-mode__item">
+                                                    <label class="styled-radio">
+                                                        <input type="radio" name="delivery-mode" id="">
+                                                        <i class="icon"></i> Доставить получателю
+                                                    </label>
+                                                </li>
+                                                <li class="delivery-mode__item">
+                                                    <label class="styled-radio">
+                                                        <input type="radio" name="delivery-mode" id="">
+                                                        <i class="icon"></i> Самовывоз
+                                                    </label>
+                                                </li>
+                                            </ul> <!-- end .delivery-mode -->
+                                            
+                                            <ul class="recipient-info__list">
+                                                <li class="recipient-info__item">
+                                                    <label class="recipient-info__label">Фамилия Имя <span class="required">*</span>:</label>
+                                                    <input type="text" name="" id="" class="recipient-info__input" placeholder="" />
+                                                </li>
+                                                
+                                                <li class="recipient-info__item">
+                                                    <label class="recipient-info__label">Телефон <span class="required">*</span>:</label>
+                                                    <input type="tel" name="" id="" class="recipient-info__input" placeholder="" />
+                                                </li>
+                                                
+                                                <li class="recipient-info__item">
+                                                    <label class="recipient-info__label">Регион:</label>
+                                                    <span class="recipient-info__value">Республика Белорусь, Минск</span>
+                                                </li>
+                                                
+                                                <li class="recipient-info__item">
+                                                    <label class="recipient-info__label">Адрес и примечания <span class="required">*</span>:</label>
+                                                    <div class="recipient-info__right">
+                                                        <textarea name="" id="" class="recipient-info__textarea"></textarea>
+                                                        <span class="recipient-info__hint">Пожалуйста, укажите адрес как можно точнее. Это поможет избежать трудностей при доставке.</span>
+                                                    </div>
+                                                </li>
+                                                
+                                                <li class="recipient-info__item">
+                                                    <label class="recipient-info__label">Дата и время доставки:</label>
+                                                    <input type="text" name="" id="" class="recipient-info__input" placeholder="" />
+                                                </li>
+                                                
+                                                <li class="recipient-info__item">
+                                                    <label class="recipient-info__label"></label>
+                                                    <div class="recipient-info__checkbox">
+                                                        <label class="styled-checkbox">
+                                                            <input type="checkbox" name="" id="" />
+                                                            <i class="icon"></i>
+                                                            <span>Отправить анонимно</span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                
+                                                <li class="recipient-info__item">
+                                                    <label class="recipient-info__label"></label>
+                                                    <div class="recipient-info__right">
+                                                        <div class="recipient-info__checkbox">
+                                                            <label class="styled-checkbox">
+                                                                <input type="checkbox" name="" id="" />
+                                                                <i class="icon"></i>
+                                                                <span>Сделать фотографию в момент доставки (бесплатно)</span>
+                                                            </label>
+                                                        </div>
+                                                        <span class="recipient-info__hint">Вышлем в течении трёх дней.</span>
+                                                    </div>
+                                                </li> <!-- end .recipient-info__item -->
+                                            </ul> <!-- end recipient-info__list -->
+                                        </div> <!-- end .recipient-info -->
+                                    </div> <!-- end .recipient-info-holder -->
+
+                                    <div class="checkout-control  clearfix">
+                                        <button class="checkout-control__btn  checkout-control__btn--back">Назад</button>
+                                        <button class="checkout-control__btn  checkout-control__btn--next">Далее</button>
+                                    </div> <!-- end checkout-control -->
+                                </li> <!-- end .order-content__item -->
+                                
+                                <li class="order-content__item  tabs__content-item  tabs__content-item--page-3">
+                                    <div class="client-info-holder">
+                                        <div class="client-info">
+                                            <ul class="client-info__list">
+                                                <li class="client-info__item">
+                                                    <label class="client-info__label">Фамилия Имя <span class="required">*</span>:</label>
+                                                    <input type="text" name="" id="" class="client-info__input" placeholder="" />
+                                                </li>
+                                                
+                                                <li class="client-info__item">
+                                                    <label class="client-info__label">Телефон <span class="required">*</span>:</label>
+                                                    <input type="text" name="" id="" class="client-info__input" placeholder="" />
+                                                </li>
+                                                
+                                                <li class="client-info__item">
+                                                    <label class="client-info__label">Эл. почта <span class="required">*</span>:</label>
+                                                    <input type="text" name="" id="" class="client-info__input" placeholder="" />
+                                                </li>
+                                                
+                                                <li class="client-info__item">
+                                                    <label class="client-info__label">Город:</label>
+                                                    <input type="text" name="" id="" class="client-info__input" placeholder="" />
+                                                </li>
+                                            </ul> <!-- end .client-info__list -->
+                                        </div> <!-- end .client-info -->
+                                    </div> <!-- end .client-info-holder -->
+                                    
+                                    <div class="checkout-control  clearfix">
+                                        <button class="checkout-control__btn  checkout-control__btn--back">Назад</button>
+                                        <button class="checkout-control__btn  checkout-control__btn--next">Далее</button>
+                                    </div> <!-- end checkout-control -->
+                                </li> <!-- end .order-content__item -->
+                                
+                                <li class="order-content__item  tabs__content-item  tabs__content-item--page-4">
+                                    
+                                    <div class="payment-holder">
+                                        <div class="payment">
+                                            <h2 class="payment__heading">Способы оплаты</h2>
+                                            
+                                            <div class="payment__subheading">
+                                                <p>Итоговая стоимость заказа составляет <span class="value">1200 руб.</span></p>
+                                                <p>Вы можете оплатить заказ любым удобным для вас способом.</p>
+                                            </div>
+                                            
+                                            <div class="payment__payments-list">
+                                                
+                <div class="payments">
+                    <ul class="payments__list">
+                        <li class="payments__item" data-pid="nal">
+                            <div class="payments__radio">
+                                <label class="styled-radio">
+                                    <input type="radio" name="payment_methods" id="nalik" />
+                                    <i class="icon"></i>
+
+                                    <div class="payments__icon">
+                                        <img src="images/payments/payments__nalik.png" alt="" />
+                                    </div>
+                                    <span class="payments__title">Наличными в Минске</span>
+                                </label>
+                            </div> <!-- end .payments__radio -->
+                        </li> <!-- end .payments__item -->
+
+
+                        <li class="payments__item" data-pid="bank">
+                            <div class="payments__radio">
+                                <label class="styled-radio">
+                                    <input type="radio" name="payment_methods" id="bank" />
+                                    <i class="icon"></i>
+
+                                    <div class="payments__icon">
+                                        <img src="images/payments/payments__bank.png" alt="" />
+                                    </div>
+                                    <span class="payments__title">Банковский перевод</span>
+                                </label>
+                            </div> <!-- end .payments__radio -->
+                        </li> <!-- end .payments__item -->
+
+
+                        <li class="payments__item" data-pid="visa">
+                            <div class="payments__radio">
+                                <label class="styled-radio">
+                                    <input type="radio" name="payment_methods" id="visa" />
+                                    <i class="icon"></i>
+
+                                    <div class="payments__icon">
+                                        <img src="images/payments/payments__visa.png" alt="" />
+                                    </div>
+                                    <span class="payments__title">Пластиковая карта</span>
+                                </label>
+                            </div> <!-- end .payments__radio -->
+                        </li> <!-- end .payments__item -->
+
+
+                        <li class="payments__item" data-pid="paypal">
+                            <div class="payments__radio">
+                                <label class="styled-radio">
+                                    <input type="radio" name="payment_methods" id="paypal" />
+                                    <i class="icon"></i>
+
+                                    <div class="payments__icon">
+                                        <img src="images/payments/payments__paypal.png" alt="" />
+                                    </div>
+                                    <span class="payments__title">PayPal</span>
+                                </label>
+                            </div> <!-- end .payments__radio -->
+                        </li> <!-- end .payments__item -->
+
+
+                        <li class="payments__item" data-pid="yandex_money">
+                            <div class="payments__radio">
+                                <label class="styled-radio">
+                                    <input type="radio" name="payment_methods" id="yandex_money" />
+                                    <i class="icon"></i>
+
+                                    <div class="payments__icon">
+                                        <img src="images/payments/payments__yandex-money.png" alt="" />
+                                    </div>
+                                    <span class="payments__title">Яндекс Деньги</span>
+                                </label>
+                            </div> <!-- end .payments__radio -->
+                        </li> <!-- end .payments__item -->
+
+
+                        <li class="payments__item" data-pid="mobile">
+                            <div class="payments__radio">
+                                <label class="styled-radio">
+                                    <input type="radio" name="payment_methods" id="mobile" />
+                                    <i class="icon"></i>
+
+                                    <div class="payments__icon">
+                                        <img src="images/payments/payments__mobile.png" alt="" />
+                                    </div>
+                                    <span class="payments__title">Мобильный телефон</span>
+                                </label>
+                            </div> <!-- end .payments__radio -->
+                        </li> <!-- end .payments__item -->
+
+
+                        <li class="payments__item" data-pid="qiwi">
+                            <div class="payments__radio">
+                                <label class="styled-radio">
+                                    <input type="radio" name="payment_methods" id="qiwi" />
+                                    <i class="icon"></i>
+
+                                    <div class="payments__icon">
+                                        <img src="images/payments/payments__qiwi.png" alt="" />
+                                    </div>
+                                    <span class="payments__title">QIWI</span>
+                                </label>
+                            </div> <!-- end .payments__radio -->
+                        </li> <!-- end .payments__item -->
+
+
+                        <li class="payments__item" data-pid="web_bank">
+                            <div class="payments__radio">
+                                <label class="styled-radio">
+                                    <input type="radio" name="payment_methods" id="web_bank" />
+                                    <i class="icon"></i>
+
+                                    <div class="payments__icon">
+                                        <img src="images/payments/payments__web.png" alt="" />
+                                    </div>
+                                    <span class="payments__title">Интернет-банкинг</span>
+                                </label>
+                            </div> <!-- end .payments__radio -->
+                        </li> <!-- end .payments__item -->
+
+
+                        <li class="payments__item" data-pid="web_money">
+                            <div class="payments__radio">
+                                <label class="styled-radio">
+                                    <input type="radio" name="payment_methods" id="web_money" />
+                                    <i class="icon"></i>
+
+                                    <div class="payments__icon">
+                                        <img src="images/payments/payments__web-money.png" alt="" />
+                                    </div>
+                                    <span class="payments__title">WebMoney</span>
+                                </label>
+                            </div> <!-- end .payments__radio -->
+                        </li> <!-- end .payments__item -->
+
+
+                        <li class="payments__item" data-pid="easy_pay">
+                            <div class="payments__radio">
+                                <label class="styled-radio">
+                                    <input type="radio" name="payment_methods" id="easy_pay" />
+                                    <i class="icon"></i>
+
+                                    <div class="payments__icon">
+                                        <img src="images/payments/payments__easypay.png" alt="" />
+                                    </div>
+                                    <span class="payments__title">EasyPay</span>
+                                </label>
+                            </div> <!-- end .payments__radio -->
+                        </li> <!-- end .payments__item -->
+
+
+                        <li class="payments__item" data-pid="western_union">
+                            <div class="payments__radio">
+                                <label class="styled-radio">
+                                    <input type="radio" name="payment_methods" id="western_union" />
+                                    <i class="icon"></i>
+
+                                    <div class="payments__icon">
+                                        <img src="images/payments/payments__western.png" alt="" />
+                                    </div>
+                                    <span class="payments__title">Western Union</span>
+                                </label>
+                            </div> <!-- end .payments__radio -->
+                        </li> <!-- end .payments__item -->
+                    </ul> <!-- end .payments__list -->
+                    
+                    <div class="payments__desc">
+                        <div class="p-description"  id="payment-desc__qiwi">
+                            <div class="p-description__arrow"></div>
+                            <div class="p-description__inner">
+                                <h3 class="p-description__heading">Visa QIWI Wallet (терминалы QIWI)</h3>
+                                <p class="p-description__text">
+                                    Вы можете оплатить свой заказ через QIWI Кошелек любым удобным вам способом: с помощью терминала, соответствующего приложения для социальных сетей или с мобильного телефона.
+                                </p>
+                            </div>
+                        </div> <!-- end .p-description -->
+                    </div> <!-- end .payments__desc -->
+                    
+                    <div class="payments__desc">
+                        <div class="p-description"  id="payment-desc__web_bank">
+                            <div class="p-description__arrow"></div>
+                            <div class="p-description__inner">
+                                <h3 class="p-description__heading">Интернет-банкинг</h3>
+                                <p class="p-description__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, laboriosam.
+                                </p>
+                            </div>
+                        </div> <!-- end .p-description -->
+                    </div> <!-- end .payments__desc -->
+                    
+                    <div class="payments__desc">
+                        <div class="p-description"  id="payment-desc__web_money">
+                            <div class="p-description__arrow"></div>
+                            <div class="p-description__inner">
+                                <h3 class="p-description__heading">Web Money</h3>
+                                <p class="p-description__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quia aliquid excepturi dolor saepe commodi et voluptate voluptatibus, dolores cumque.
+                                </p>
+                            </div>
+                        </div> <!-- end .p-description -->
+                    </div> <!-- end .payments__desc -->
+                    
+                    <div class="payments__desc">
+                        <div class="p-description"  id="payment-desc__easy_pay">
+                            <div class="p-description__arrow"></div>
+                            <div class="p-description__inner">
+                                <h3 class="p-description__heading">Easy Pay</h3>
+                                <p class="p-description__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum cupiditate mollitia quas, unde fuga dolor quasi ex, dignissimos molestiae quisquam, sed explicabo aperiam natus. Explicabo eos quis libero officia est animi, nemo rerum recusandae error ipsum fugit nulla porro. Voluptas?
+                                </p>
+                            </div>
+                        </div> <!-- end .p-description -->
+                    </div> <!-- end .payments__desc -->
+                    
+                    <div class="payments__desc">
+                        <div class="p-description"  id="payment-desc__western_union">
+                            <div class="p-description__arrow"></div>
+                            <div class="p-description__inner">
+                                <h3 class="p-description__heading">Western Union</h3>
+                                <p class="p-description__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum explicabo sint error illo, earum expedita nemo alias quasi repellendus repudiandae doloribus odio, non optio tenetur beatae suscipit. Dolorem, molestias, magni?
+                                </p>
+                            </div>
+                        </div> <!-- end .p-description -->
+                    </div> <!-- end .payments__desc -->
+                </div> <!-- end .payments -->
+                                                
+                                                
+                                            </div> <!-- end.payment__payments-list -->
+                                        </div> <!-- end .payment -->
+                                    </div> <!-- end .payment-holder -->
+                                    
+                                    <div class="checkout-control  clearfix">
+                                        <button class="checkout-control__btn  checkout-control__btn--back">Назад</button>
+                                        <button class="checkout-control__btn  checkout-control__btn--order">Оформить заказ</button>
+                                    </div> <!-- end checkout-control -->
+                                </li> <!-- end .order-content__item -->
+                            </ul> <!-- end .order-content -->
+                        </div> <!-- end .order-page__inner -->
+                    </div>
+                    <!-- Order Page End -->
+                    
+                </div>
+                <!-- Content Wrapper End -->
+            </div>
+            <!-- Main Content End -->
+        </div> <!-- end center-wrapper -->
+        
+        
+        <!-- Main Footer -->
+        <footer class="main-footer" id="footer">
+            <div class="center-wrapper clearfix">
+                <div class="main-footer__inner">
+                    <div class="footer-links">
+                        <p class="footer-links__title">Информация</p>
+                        <ul class="footer-links__list">
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Новости</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <p class="footer-links__title">Как заказать</p>
+                        <ul class="footer-links__list">
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <p class="footer-links__title">Личный кабинет</p>
+                        <ul class="footer-links__list">
+                            <li><a href="#">Мой кабинет</a></li>
+                            <li><a href="#">История заказов</a></li>
+                            <li><a href="#">Избранное</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <p class="footer-links__title">Мы в социальных сетях</p>
+                        <ul class="social-links">
+                            <li class="social-links__item">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#"><i class="fa fa-vk"></i></a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul> <!-- end social-links -->
+                    </div>
+                </div> <!-- end main-footer__inner -->
+            </div>
+        </footer>
+        <!-- Main Footer End -->
+            
+    </div>
+    <!-- Wrapper End -->
+    
+    
+    
+    <!-- Scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    
+    <!-- Include local jQuery -->
+    <script src="js/jQuery/jquery-1.11.0.min.js"></script>
+    
+    <!-- Include Lightbox -->
+    <script src="js/lightbox.min/lightbox.min.js"></script>
+    
+    <!-- Include owlCarousel -->
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    
+    <!-- Include Custom ScrollBar plugin -->
+    <script src="js/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
+    
+    <!-- Dev Scripts -->
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html>

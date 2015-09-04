@@ -22,6 +22,13 @@
     <!-- Include Lightbox -->
     <link rel="stylesheet" href="js/lightbox.min/lightbox.css" />
     
+    <!-- Include owlCarousel styles -->
+    <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
+    
+    <!-- Include Custom ScrollBar plugin styles -->
+    <link rel="stylesheet" href="js/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    
     <!-- Dev Styles -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Responsive Styles -->
@@ -79,12 +86,7 @@
                         </div>
                         <div class="location">
                             <i class="location__icon"></i>
-                            <select name="location-choice" id="location-choice" class="location__choice">
-                                <option value="Санкт-Петербург">Санкт-Петербург</option>
-                                <option value="Минск">Минск</option>
-                                <option value="Киев">Киев</option>
-                                <option value="Москва">Москва</option>
-                            </select>
+                            <a href="#" class="location__choice">Санкт-Петербург</a>
                         </div>
                     </div> <!-- end logo-and-location -->
 
@@ -124,15 +126,30 @@
                     </div> <!-- end contacts-and-search -->
                     
                     <div class="basket-and-auth">
-                        <div class="basket-wrap clearfix">
-                            <a href="#" class="get-discount" title="Получить скидку">
-                                <span>Получи скидку прямо сейчас</span>
-                            </a>
-                            <a href="#" class="basket" title="Корзина товаров">
-                                <span class="basket__icon-placeholder"></span>
-                                <span class="basket__product-amount">56</span>
-                            </a>
-                        </div> <!-- end basket-wrap -->
+                        <div class="control-panel">
+                            <ul class="control-panel__list  clearfix">
+                                <li class="control-panel__item  control-panel__favorites-control">
+                                    <div class="favorites-control">
+                                        <a href="#" class="favorites-control__icon"></a>
+                                        <span class="control-panel__value  is-active">5</span>
+                                    </div>
+                                </li>
+                                
+                                <li class="control-panel__item  control-panel__comparison-control">
+                                    <div class="comparison-control">
+                                        <a href="#" class="comparison-control__icon"></a>
+                                        <span class="control-panel__value  is-active">2</span>
+                                    </div>
+                                </li>
+                                
+                                <li class="control-panel__item  control-panel__basket-control">
+                                    <div class="basket-control">
+                                        <a href="#" class="basket-control__icon  basket-control__icon--active"></a>
+                                        <span class="basket-control__value">3</span>
+                                    </div>
+                                </li>
+                            </ul> <!-- end .control-panel__list -->
+                        </div> <!-- end .control-panel -->
                         
                         <ul class="user-auth">
                             <li><a href="#">Войти</a></li>
@@ -315,8 +332,17 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/modernizr-2.6.2.min.js"></script>
     
+    <!-- Include local jQuery -->
+    <script src="js/jQuery/jquery-1.11.0.min.js"></script>
+    
     <!-- Include Lightbox -->
     <script src="js/lightbox.min/lightbox.min.js"></script>
+    
+    <!-- Include owlCarousel -->
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    
+    <!-- Include Custom ScrollBar plugin -->
+    <script src="js/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
     
     <!-- Dev Scripts -->
     <script src="js/scripts.js"></script>

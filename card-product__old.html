@@ -22,13 +22,6 @@
     <!-- Include Lightbox -->
     <link rel="stylesheet" href="js/lightbox.min/lightbox.css" />
     
-    <!-- Include owlCarousel styles -->
-    <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
-    <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
-    
-    <!-- Include Custom ScrollBar plugin styles -->
-    <link rel="stylesheet" href="js/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
-    
     <!-- Dev Styles -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Responsive Styles -->
@@ -86,7 +79,12 @@
                         </div>
                         <div class="location">
                             <i class="location__icon"></i>
-                            <a href="#" class="location__choice">Санкт-Петербург</a>
+                            <select name="location-choice" id="location-choice" class="location__choice">
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Минск">Минск</option>
+                                <option value="Киев">Киев</option>
+                                <option value="Москва">Москва</option>
+                            </select>
                         </div>
                     </div> <!-- end logo-and-location -->
 
@@ -126,30 +124,15 @@
                     </div> <!-- end contacts-and-search -->
                     
                     <div class="basket-and-auth">
-                        <div class="control-panel">
-                            <ul class="control-panel__list  clearfix">
-                                <li class="control-panel__item  control-panel__favorites-control">
-                                    <div class="favorites-control">
-                                        <a href="#" class="favorites-control__icon"></a>
-                                        <span class="control-panel__value  is-active">5</span>
-                                    </div>
-                                </li>
-                                
-                                <li class="control-panel__item  control-panel__comparison-control">
-                                    <div class="comparison-control">
-                                        <a href="#" class="comparison-control__icon"></a>
-                                        <span class="control-panel__value  is-active">2</span>
-                                    </div>
-                                </li>
-                                
-                                <li class="control-panel__item  control-panel__basket-control">
-                                    <div class="basket-control">
-                                        <a href="#" class="basket-control__icon  basket-control__icon--active"></a>
-                                        <span class="basket-control__value">3</span>
-                                    </div>
-                                </li>
-                            </ul> <!-- end .control-panel__list -->
-                        </div> <!-- end .control-panel -->
+                        <div class="basket-wrap clearfix">
+                            <a href="#" class="get-discount" title="Получить скидку">
+                                <span>Получи скидку прямо сейчас</span>
+                            </a>
+                            <a href="#" class="basket" title="Корзина товаров">
+                                <span class="basket__icon-placeholder"></span>
+                                <span class="basket__product-amount">56</span>
+                            </a>
+                        </div> <!-- end basket-wrap -->
                         
                         <ul class="user-auth">
                             <li><a href="#">Войти</a></li>
@@ -202,8 +185,7 @@
                                 <li><a href="images/img-product-1.jpg" style="background-image: url(images/img-product-1.jpg);" data-lightbox="roadtrip"></a></li>
                                 <li><a href="images/img-product-2.jpg" style="background-image: url(images/img-product-2.jpg);" data-lightbox="roadtrip"></a></li>
                                 <li><a href="images/img-product-3.jpg" style="background-image: url(images/img-product-4.jpg);" data-lightbox="roadtrip"></a></li>
-                                
-                                <li class="video-review"><a href="#" style="background-image: url(images/icon__youtube-big.png);">Видео-обзор</a></li>
+                                <li><a href="images/img-product-4.jpg" style="background-image: url(images/img-product-3.jpg);" data-lightbox="roadtrip"></a></li>
                             </ul> <!-- end card-product__image-list -->
                         </div> <!-- end card-product__images -->
                         
@@ -257,28 +239,14 @@
                             </div>
                             
                             <div class="card-product__tools">
-                                <a href="#" class="card-product__tool  card-product__tool--favorites  is-active" id="to-favorites">В избранное</a>
-                                <a href="#" class="card-product__tool  card-product__tool--compare  is-active" id="to-compare">В сравнение</a>
+                                <a href="#" class="card-product__tool  card-product__tool--favorites" id="to-favorites">В избранное</a>
+                                <a href="#" class="card-product__tool  card-product__tool--compare" id="to-compare">В сравнение</a>
                             </div> <!-- end card-product__tools -->
                             
                             <div class="card-product__buttons">
                                 <a href="#" class="card-product__button  card-product__button--buy">Купить</a>
                                 <a href="#" class="card-product__button  card-product__button--order">Заказать по телефону</a>
                             </div> <!-- end card-product__buttons -->
-                            
-                            <section class="card-product__payments">
-                                <h3>Способы оплаты</h3>
-                                
-                                <ul class="card-product__payments-list">
-                                    <li><img src="images/icon__payments-min-1.png" alt=""></li>
-                                    <li><img src="images/icon__payments-min-2.png" alt=""></li>
-                                    <li><img src="images/icon__payments-min-3.png" alt=""></li>
-                                    <li><img src="images/icon__payments-min-4.png" alt=""></li>
-                                    <li><img src="images/icon__payments-min-5.png" alt=""></li>
-                                    <li><img src="images/icon__payments-min-6.png" alt=""></li>
-                                    <li><img src="images/icon__payments-min-7.png" alt=""></li>
-                                </ul>
-                            </section>
                             
                             <section class="card-product__composition">
                                 <h3>Состав букета:</h3>
@@ -366,31 +334,9 @@
                                 <h3 class="product-info__heading">Отзыв о товаре/сервисе</h3>
                                 <div class="review-rating">
                                     <span class="review-rating__scale-tag">Плохой</span>
-                                    <div class="review-rating__rating">
-                                        <div class="rating">
-                                            <ul class="rating-stars">
-                                                <li class="rating-stars__item">
-                                                    <span class="rating-stars__star"></span>
-                                                </li> <!-- end rating-stars__item -->
-
-                                                <li class="rating-stars__item">
-                                                    <span class="rating-stars__star"></span>
-                                                </li> <!-- end rating-stars__item -->
-
-                                                <li class="rating-stars__item">
-                                                    <span class="rating-stars__star"></span>
-                                                </li> <!-- end rating-stars__item -->
-
-                                                <li class="rating-stars__item">
-                                                    <span class="rating-stars__star"></span>
-                                                </li> <!-- end rating-stars__item -->
-
-                                                <li class="rating-stars__item">
-                                                    <span class="rating-stars__star"></span>
-                                                </li> <!-- end rating-stars__item -->
-                                            </ul> <!-- end rating-stars -->
-                                        </div> <!-- end rating -->
-                                    </div> <!-- end .review-rating__rating -->
+                                    <div class="review-rating__scale">
+                                        <img src="images/img__rating-placeholder.png" alt="">
+                                    </div>
                                     <span class="review-rating__scale-tag">Отличный</span>
                                 </div> <!-- end review-rating -->
                                 
@@ -602,17 +548,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/modernizr-2.6.2.min.js"></script>
     
-    <!-- Include local jQuery -->
-    <script src="js/jQuery/jquery-1.11.0.min.js"></script>
-    
     <!-- Include Lightbox -->
     <script src="js/lightbox.min/lightbox.min.js"></script>
-    
-    <!-- Include owlCarousel -->
-    <script src="js/owl-carousel/owl.carousel.min.js"></script>
-    
-    <!-- Include Custom ScrollBar plugin -->
-    <script src="js/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
     
     <!-- Dev Scripts -->
     <script src="js/scripts.js"></script>
