@@ -97,19 +97,36 @@ $(document).ready(function(){
             }
             
             console.log('tabletItems = ' + tabletItems);
-
-            $(this).owlCarousel({
-                autoPlay: $autoPlayInterval,
-                items: maxItems,
-                itemsDesktop: maxItems,
-                itemsTablet: tabletItems,
-                itemsmobile: 1,
-                navigation: false,
-                pagination: false,
-                responsive: true,
-                slideSpeed: $slideSpeed,
-                width: 'auto'
-            });
+            
+            
+            if ( $(this).hasClass('comparison__list') ) {  // option for comparison page
+                
+                $(this).owlCarousel({
+                    items : 3, // 3 items above 1024px browser width
+                    itemsDesktop : [1024,2], // 2 items between 1024px and 768px
+                    itemsDesktopSmall : [768,1], // betweem 768px
+                    navigation: false,
+                    pagination: false,
+                    responsive: true,
+                    slideSpeed: $slideSpeed,
+                    width: 'auto'
+                });
+                
+            } else {  // option for any carousel slider
+                
+                $(this).owlCarousel({
+                    autoPlay: $autoPlayInterval,
+                    items: maxItems,
+                    itemsDesktop: maxItems,
+                    itemsTablet: tabletItems,
+                    itemsmobile: 1,
+                    navigation: false,
+                    pagination: false,
+                    responsive: true,
+                    slideSpeed: $slideSpeed,
+                    width: 'auto'
+                });
+            }
 
             var owlAPI = $(this).data('owlCarousel'),
                 sliderControls = $(this).parent().parent().find('.carousel-control');
@@ -123,6 +140,42 @@ $(document).ready(function(){
                 owlAPI.next();
             });
 
+        });
+    });
+    
+    
+    // Remove item from comparison list on comparison page
+    $(function() {
+        var owlData = $('.comparison__list').data('owlCarousel'),
+            comparisonList = $('.comparison__list'),
+            parentContainer = comparisonList.parent().parent(),
+            
+            defaultMessage = "<h4 class=\"comparison__message\">Нет товаров для сравнения</h4>",
+            
+            btnRemoveItem = $('.product-comparison__remove-item');
+        
+        
+        btnRemoveItem.on('click', function(e) {
+            e.preventDefault();
+            
+            var $this = $(this),
+                countItems = $this.closest(comparisonList).find('.owl-item'),
+                targetPositionItem = $this.closest('.owl-item').index();
+            
+            console.log('targetPositionItem = ' + targetPositionItem );
+            console.log('countItems = ' + countItems.length );
+            console.log('defaultMessage = ' + defaultMessage );
+            
+            if ( countItems.length <= 1 ) {
+                owlData.removeItem(targetPositionItem);
+                
+                parentContainer.find('.comparison__control').remove();
+                parentContainer.append(defaultMessage);
+                
+            } else {
+                owlData.removeItem(targetPositionItem);
+            }
+            
         });
     });
     
@@ -210,8 +263,6 @@ $(document).ready(function(){
     
     // init visualization rating
     $(function() {
-        
-        
         $('.rating-stars__item').hover(
             function() {
                 var index = $(this).index();
@@ -223,6 +274,47 @@ $(document).ready(function(){
             },
             function() {
                 $('.rating-stars__item').removeClass('active');
+        });
+    });
+    
+    
+    // asasas
+    $(function() {
+        
+        $('.param__heading').on('click', function(e) {
+            
+            if ( $(window).width() <= 978 ) {
+                e.preventDefault();
+                
+                var $this = $(this),
+                    filterItem = $this.closest('.filter__param'),
+                    filterList = $this.closest('.filter'),
+                    filterItems = filterList.find('.filter__param'),
+                    filterContent = filterItem.find('.param__list'),
+                    filterOtherContent = filterList.find('.param__list'),
+
+                    duration = 250;
+
+                if (!filterItem.hasClass('is-active')) {
+                    filterItem.addClass('is-active').siblings().removeClass('is-active');
+                    filterOtherContent.slideUp(duration);
+                    filterContent.slideDown(duration);
+                } else {
+                    filterOtherContent.slideUp(duration);
+
+                    filterItem.removeClass('is-active');
+                }
+            } else {
+                return false;
+            }
+        });
+    });
+    
+    
+    $(function() {
+    
+        $('#add_postcard').on('click', function() {
+            $('.postcard').toggleClass('active');
         });
         
     });

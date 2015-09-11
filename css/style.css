@@ -342,6 +342,7 @@ p:last-child {
 }
 .second-nav a {
     display: block;
+    border-bottom: 1px solid transparent;
 }
 .second-nav li:hover a {
     border-bottom: 1px solid #333;
@@ -424,6 +425,17 @@ p:last-child {
     display: inline-block;
     vertical-align: middle;
     letter-spacing: -1.9px
+}
+
+.contacts__phone-list {
+    display: none;
+    text-align: center;
+}
+.contacts__phone-list > li {
+    font-size: 30px;
+    font-family: 'Comfortaa-Bold';
+    color: #309080;
+    letter-spacing: -1.9px;
 }
 
 .contacts__more {
@@ -2290,9 +2302,16 @@ p:last-child {
     z-index: 50;
 }
 
+.comparison__message {
+    font-family: 'Comfortaa-Regular', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
 .comparison__list {
     width: 100%;
-    display: table;
+    display: block;
+    background: #fff;
 }
 .comparison__list:after {
     content: '';
@@ -2301,12 +2320,44 @@ p:last-child {
 }
 .comparison__item {
     position: relative;
-    display: table-cell;
+    display: block;
+    width: 285px !important;
+    margin: 0 auto;
 }
+
+
+.comparison__arrow {
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -140px;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    cursor: pointer;
+    opacity: 0.65;
+}
+
+.comparison__arrow--prev {
+    left: 10px;
+    border-right: 25px solid #309080;
+}
+.comparison__arrow--prev:hover {
+    border-right-color: #2fac97;
+}
+
+.comparison__arrow--next {
+    right: 10px;
+    border-left: 25px solid #309080;
+}
+.comparison__arrow--next:hover {
+    border-left-color: #2fac97;
+}
+
 
 .product-comparison {
     position: relative;
-    padding: 10px 35px 35px;
+    padding: 10px 25px 35px;
     background: #fff;
     text-align: center;
     font-family: 'Comfortaa-Regular';
@@ -3217,6 +3268,7 @@ p:last-child {
     display: block;
     width: 185px !important;
     min-height: 125px;
+    margin: 0 auto;
     font-size: 14px;
     text-align: center;
 }
@@ -3431,7 +3483,11 @@ label input[type="checkbox"]:checked + .icon:after {
 }
 
 .postcard {
+    display: none;
     width: 100%;
+}
+.postcard.active {
+    display: block;
 }
 
 .postcard__slider-holder {
@@ -3872,7 +3928,7 @@ label input[type="radio"]:checked + .icon:after {
     display: block;
     width: 19px !important;
     height: 19px !important;
-    background-image: url(../images/icon__selected-1.png) !important;
+    background-image: url(../images/icons__payment-checked.png) !important;
     background-repeat: no-repeat;
     position: absolute;
     z-index: 10;
@@ -3881,12 +3937,12 @@ label input[type="radio"]:checked + .icon:after {
 }
 .payments__radio input[type="radio"] + .icon:after {
     content: '';
-    background-position: -50px 0;
+    background-position: -34px -5px;
 }
 .payments__radio input[type="radio"]:checked + .icon:after {
     content: '';
     display: block;
-    background-position: 0 0;
+    background-position: -5px -5px;
 }
 /*  /Custom CheckBoxes and RadioButtons  */
 

@@ -193,55 +193,55 @@
                                     <div class="order-basket">
                                         <table class="table-basket">
                                             <tr class="table-basket__row">
-                                                <td class="t-image">
+                                                <td data-label="" class="t-image">
                                                     <a href="#"><img src="images/img-product-1.jpg" alt=""></a>
                                                 </td>
-                                                <td class="t-title">
+                                                <td data-label="Название" class="t-title">
                                                     <a href="#">Исполнение желаний</a>
                                                 </td>
-                                                <td class="t-amount  amount">
+                                                <td data-label="Кол-во" class="t-amount  amount">
                                                     <button class="amount__btn  amount__btn--minus">-</button>
                                                     <input type="text" class="amount__input" value="1" maxlength="2">
                                                     <button class="amount__btn  amount__btn--plus">+</button>
                                                 </td>
-                                                <td class="t-price">1350 руб.</td>
-                                                <td class="t-remove">
+                                                <td data-label="Цена" class="t-sum">1350 руб.</td>
+                                                <td data-label="" class="t-remove">
                                                     <span class="remove-button"></span>
                                                 </td>
                                             </tr> <!-- end .table-basket__row -->
                                             
                                             <tr class="table-basket__row">
-                                                <td class="t-image">
+                                                <td data-label="" class="t-image">
                                                     <a href="#"><img src="images/img-product-2.jpg" alt=""></a>
                                                 </td>
-                                                <td class="t-title">
+                                                <td data-label="Название" class="t-title">
                                                     <a href="#">Lorem ipsum.</a>
                                                 </td>
-                                                <td class="t-amount  amount">
+                                                <td data-label="Кол-во" class="t-amount  amount">
                                                     <button class="amount__btn  amount__btn--minus">-</button>
                                                     <input type="text" class="amount__input" value="1" maxlength="2">
                                                     <button class="amount__btn  amount__btn--plus">+</button>
                                                 </td>
-                                                <td class="t-price">1350 руб.</td>
-                                                <td class="t-remove">
+                                                <td data-label="Цена" class="t-sum">1350 руб.</td>
+                                                <td data-label="" class="t-remove">
                                                     <span class="remove-button"></span>
                                                 </td>
                                             </tr> <!-- end .table-basket__row -->
                                             
                                             <tr class="table-basket__row">
-                                                <td class="t-image">
+                                                <td data-label="" class="t-image">
                                                     <a href="#"><img src="images/img-product-3.jpg" alt=""></a>
                                                 </td>
-                                                <td class="t-title">
+                                                <td data-label="Название" class="t-title">
                                                     <a href="#">Lorem ipsum dolor sit.</a>
                                                 </td>
-                                                <td class="t-amount  amount">
+                                                <td data-label="Кол-во" class="t-amount  amount">
                                                     <button class="amount__btn  amount__btn--minus">-</button>
                                                     <input type="text" class="amount__input" value="1" maxlength="2">
                                                     <button class="amount__btn  amount__btn--plus">+</button>
                                                 </td>
-                                                <td class="t-price">1350 руб.</td>
-                                                <td class="t-remove">
+                                                <td data-label="Цена" class="t-sum">1350 руб.</td>
+                                                <td data-label="" class="t-remove">
                                                     <span class="remove-button"></span>
                                                 </td>
                                             </tr> <!-- end .table-basket__row -->
@@ -412,7 +412,7 @@
                                             
                                             <div class="check-postcard__checkbox">
                                                 <label class="styled-checkbox">
-                                                    <input type="checkbox" name="" id="" />
+                                                    <input type="checkbox" name="" id="add_postcard" />
                                                     <i class="icon"></i>
                                                     <span>Добавить открытку (бесплатно)</span>
                                                 </label>
@@ -422,7 +422,7 @@
                                                 
                                                 <div class="postcard__slider-holder">
                                                     <div class="postcard__slider-wrap">
-                                                        <ul class="postcard__slider  carousel"  data-max-items="1"  data-slide-speed="300">
+                                                        <ul class="postcard__slider  carousel"  data-max-items="1"  data-tablet-items="1"  data-slide-speed="300">
                                                             <li class="postcard__slider-item">
                                                                 <a href="#"><img src="images/img__postcard-image-1.png" alt="" /></a>
                                                             </li>
@@ -538,8 +538,8 @@
                                     </div> <!-- end .recipient-info-holder -->
 
                                     <div class="checkout-control  clearfix">
-                                        <button class="checkout-control__btn  checkout-control__btn--back">Назад</button>
                                         <button class="checkout-control__btn  checkout-control__btn--next">Далее</button>
+                                        <button class="checkout-control__btn  checkout-control__btn--back">Назад</button>
                                     </div> <!-- end checkout-control -->
                                 </li> <!-- end .order-content__item -->
                                 
@@ -571,8 +571,8 @@
                                     </div> <!-- end .client-info-holder -->
                                     
                                     <div class="checkout-control  clearfix">
-                                        <button class="checkout-control__btn  checkout-control__btn--back">Назад</button>
                                         <button class="checkout-control__btn  checkout-control__btn--next">Далее</button>
+                                        <button class="checkout-control__btn  checkout-control__btn--back">Назад</button>
                                     </div> <!-- end checkout-control -->
                                 </li> <!-- end .order-content__item -->
                                 
@@ -823,8 +823,8 @@
                                     </div> <!-- end .payment-holder -->
                                     
                                     <div class="checkout-control  clearfix">
-                                        <button class="checkout-control__btn  checkout-control__btn--back">Назад</button>
                                         <button class="checkout-control__btn  checkout-control__btn--order">Оформить заказ</button>
+                                        <button class="checkout-control__btn  checkout-control__btn--back">Назад</button>
                                     </div> <!-- end checkout-control -->
                                 </li> <!-- end .order-content__item -->
                             </ul> <!-- end .order-content -->
